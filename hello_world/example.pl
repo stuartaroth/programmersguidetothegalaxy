@@ -1,1 +1,3 @@
-print "Hello World!\n";
+use strict;
+
+print "Hello World!"."\n";
