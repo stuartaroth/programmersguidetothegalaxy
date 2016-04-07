@@ -1,2 +1,4 @@
 *.class
 *.js
+.DS_Store
+.idea/
