@@ -7,7 +7,7 @@ class Example {
 
     int x = 13;
     int y = 34;
-    int z = 47;
+    int z = x + y;
     System.out.println(z);
   }
 }
