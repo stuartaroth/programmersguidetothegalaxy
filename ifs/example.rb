@@ -34,6 +34,14 @@ def conditionalAndOr(x, y)
   end
 end
 
+def conditionalTruthyFalsy(value)
+  if value
+    return "Value is truthy"
+  else
+    return "Value is falsy"
+  end
+end
+
 trueResponse = conditionalBoolean(true)  
 puts trueResponse
 
@@ -63,3 +71,29 @@ puts orResponse
 
 elseResponse = conditionalAndOr(-12, 0)
 puts elseResponse
+
+truthyResponse1 = conditionalTruthyFalsy(true)
+truthyResponse2 = conditionalTruthyFalsy(1)
+truthyResponse3 = conditionalTruthyFalsy("true")
+truthyResponse4 = conditionalTruthyFalsy("false")
+truthyResponse5 = conditionalTruthyFalsy("")
+truthyResponse6 = conditionalTruthyFalsy(0)
+truthyResponse7 = conditionalTruthyFalsy("0")
+truthyResponse8 = conditionalTruthyFalsy([])
+truthyResponse9 = conditionalTruthyFalsy({})
+
+puts truthyResponse1
+puts truthyResponse2
+puts truthyResponse3
+puts truthyResponse4
+puts truthyResponse5
+puts truthyResponse6
+puts truthyResponse7
+puts truthyResponse8
+puts truthyResponse9
+
+falsyResponse1 = conditionalTruthyFalsy(false)
+falsyResponse2 = conditionalTruthyFalsy(nil)
+
+puts falsyResponse1
+puts falsyResponse2

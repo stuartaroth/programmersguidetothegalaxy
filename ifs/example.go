@@ -29,13 +29,13 @@ func conditionalString(value string) string {
 }
 
 func conditionalAndOr(x int, y int) string {
-  if x > 0 && y > 0 {
-    return "x and y are both positive"
-  } else if x > 0 || y > 0 {
-    return "either x or y is positive"
-  } else {
-    return "x and y are both 0 or negative"
-  }
+	if x > 0 && y > 0 {
+		return "x and y are both positive"
+	} else if x > 0 || y > 0 {
+		return "either x or y is positive"
+	} else {
+		return "x and y are both 0 or negative"
+	}
 }
 
 func main() {
@@ -60,12 +60,12 @@ func main() {
 	nonRumResponse := conditionalString("grog")
 	fmt.Println(nonRumResponse)
 
-  andResponse := conditionalAndOr(13, 34)
-  fmt.Println(andResponse)
+	andResponse := conditionalAndOr(13, 34)
+	fmt.Println(andResponse)
 
-  orResponse := conditionalAndOr(7, -8)
-  fmt.Println(orResponse)
+	orResponse := conditionalAndOr(7, -8)
+	fmt.Println(orResponse)
 
-  elseResponse := conditionalAndOr(0, -4)
-  fmt.Println(elseResponse)
+	elseResponse := conditionalAndOr(0, -4)
+	fmt.Println(elseResponse)
 }

@@ -26,6 +26,12 @@ def conditionalAndOr(x, y):
   else:
     return "x and y are both 0 or negative"
 
+def conditionalTruthyFalsy(value):
+  if value:
+    return "Value is truthy"
+  else:
+    return "Value is falsy"
+
 trueResponse = conditionalBoolean(True)
 print(trueResponse)
 
@@ -55,3 +61,33 @@ print(orResponse)
 
 elseResponse = conditionalAndOr(-12, 0)
 print(elseResponse)
+
+truthyResponse1 = conditionalTruthyFalsy(True)
+truthyResponse2 = conditionalTruthyFalsy(1)
+truthyResponse3 = conditionalTruthyFalsy("bumbo")
+truthyResponse4 = conditionalTruthyFalsy("true")
+truthyResponse5 = conditionalTruthyFalsy("false")
+truthyResponse6 = conditionalTruthyFalsy("0")
+
+print(truthyResponse1)
+print(truthyResponse2)
+print(truthyResponse3)
+print(truthyResponse4)
+print(truthyResponse5)
+print(truthyResponse6)
+
+falsyResponse1 = conditionalTruthyFalsy(False)
+falsyResponse2 = conditionalTruthyFalsy(0)
+falsyResponse3 = conditionalTruthyFalsy("")
+falsyResponse4 = conditionalTruthyFalsy(None)
+falsyResponse5 = conditionalTruthyFalsy([])
+falsyResponse6 = conditionalTruthyFalsy({})
+falsyResponse7 = conditionalTruthyFalsy(())
+
+print(falsyResponse1)
+print(falsyResponse2)
+print(falsyResponse3)
+print(falsyResponse4)
+print(falsyResponse5)
+print(falsyResponse6)
+print(falsyResponse7)

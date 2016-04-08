@@ -54,6 +54,18 @@ sub conditionalAndOr {
   }
 }
 
+sub conditionalTruthyFalsy {
+  my ($value) = @_;
+  if ($value)
+  {
+    return "Value is truthy";
+  }
+  else
+  {
+    return "Value is falsy";
+  }
+}
+
 my $trueResponse = conditionalBoolean(1);
 print $trueResponse."\n";
 
@@ -83,3 +95,24 @@ print $orResponse."\n";
 
 my $elseResponse = conditionalAndOr(-12, 0);
 print $elseResponse."\n";
+
+my $truthyResponse1 = conditionalTruthyFalsy(1);
+my $truthyResponse2 = conditionalTruthyFalsy("bumbo");
+my $truthyResponse3 = conditionalTruthyFalsy("true");
+my $truthyResponse4 = conditionalTruthyFalsy("false");
+
+print $truthyResponse1."\n";
+print $truthyResponse2."\n";
+print $truthyResponse3."\n";
+print $truthyResponse4."\n";
+
+
+my $falsyResponse1 = conditionalTruthyFalsy(0);
+my $falsyResponse2 = conditionalTruthyFalsy("");
+my $falsyResponse3 = conditionalTruthyFalsy("0");
+my $falsyResponse4 = conditionalTruthyFalsy(undef);
+
+print $falsyResponse1."\n";
+print $falsyResponse2."\n";
+print $falsyResponse3."\n";
+print $falsyResponse4."\n";

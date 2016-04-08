@@ -34,6 +34,14 @@ var conditionalAndOr = (x: number, y: number) => {
   }
 }
 
+var conditionalTruthyFalsy = (value: any) => {
+  if(value) {
+    return "Value is truthy";
+  } else {
+    return "Value is falsy";
+  }
+}
+
 var trueResponse = conditionalBoolean(true);
 console.log(trueResponse);
 
@@ -63,3 +71,33 @@ console.log(orResponse);
 
 var elseResponse = conditionalAndOr(-12, 0);
 console.log(elseResponse);
+
+var truthyResponse1 = conditionalTruthyFalsy(true);
+var truthyResponse2 = conditionalTruthyFalsy(1);
+var truthyResponse3 = conditionalTruthyFalsy("bumbo");
+var truthyResponse4 = conditionalTruthyFalsy("true");
+var truthyResponse5 = conditionalTruthyFalsy("false");
+var truthyResponse6 = conditionalTruthyFalsy("0");
+var truthyResponse7 = conditionalTruthyFalsy([]);
+var truthyResponse8 = conditionalTruthyFalsy({});
+
+console.log(truthyResponse1);
+console.log(truthyResponse2);
+console.log(truthyResponse3);
+console.log(truthyResponse4);
+console.log(truthyResponse5);
+console.log(truthyResponse6);
+console.log(truthyResponse7);
+console.log(truthyResponse8);
+
+var falsyResponse1 = conditionalTruthyFalsy(false);
+var falsyResponse2 = conditionalTruthyFalsy(0);
+var falsyResponse3 = conditionalTruthyFalsy("");
+var falsyResponse4 = conditionalTruthyFalsy(null);
+var falsyResponse5 = conditionalTruthyFalsy(undefined);
+
+console.log(falsyResponse1);
+console.log(falsyResponse2);
+console.log(falsyResponse3);
+console.log(falsyResponse4);
+console.log(falsyResponse5);
