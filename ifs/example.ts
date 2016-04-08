@@ -1,46 +1,46 @@
-var conditionalBoolean = (value: boolean) => {
-  if(value) {
-    return "Value is true";
-  } else {
-    return "Value is false";
-  }
+var conditionalBoolean = (value:boolean) => {
+    if (value) {
+        return "Value is true";
+    } else {
+        return "Value is false";
+    }
 };
 
-var conditionalInt = (value: number) => {
-  if(value < 0) {
-    return "Value is negaive";
-  } else if(value > 0) {
-    return "Value is positive";
-  } else {
-    return "Value is zero";
-  }
-}
+var conditionalInt = (value:number) => {
+    if (value < 0) {
+        return "Value is negaive";
+    } else if (value > 0) {
+        return "Value is positive";
+    } else {
+        return "Value is zero";
+    }
+};
 
-var conditionalString = (value: string) => {
-  if(value == "rum") {
-    return "Yarr thanks for the rum!"
-  } else {
-    return "Yerr do you have any rum?"
-  }
-}
+var conditionalString = (value:string) => {
+    if (value == "rum") {
+        return "Yarr thanks for the rum!"
+    } else {
+        return "Yerr do you have any rum?"
+    }
+};
 
-var conditionalAndOr = (x: number, y: number) => {
-  if (x > 0 && y > 0) {
-    return "x and y are both positive";
-  } else if (x > 0 || y > 0) {
-    return "either x or y is positive";
-  } else {
-    return "x and y are both 0 or negative";
-  }
-}
+var conditionalAndOr = (x:number, y:number) => {
+    if (x > 0 && y > 0) {
+        return "x and y are both positive";
+    } else if (x > 0 || y > 0) {
+        return "either x or y is positive";
+    } else {
+        return "x and y are both 0 or negative";
+    }
+};
 
-var conditionalTruthyFalsy = (value: any) => {
-  if(value) {
-    return "Value is truthy";
-  } else {
-    return "Value is falsy";
-  }
-}
+var conditionalTruthyFalsy = (value:any) => {
+    if (value) {
+        return "Value is truthy";
+    } else {
+        return "Value is falsy";
+    }
+};
 
 var trueResponse = conditionalBoolean(true);
 console.log(trueResponse);

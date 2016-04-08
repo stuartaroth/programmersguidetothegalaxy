@@ -23,9 +23,11 @@ for(index <- 0 until list.length) {
 
 for(index <- list.indices) {
   print(index)
-  println(list(index))  
+  println(list(index))
 }
 
-list.foreach { println }
+list.foreach {
+  println
+}
 
 list.foreach(println)

@@ -1,4 +1,5 @@
 use strict;
+use warnings;
 
 my $name = "Jacquotte Delahaye";
 my $count = 7;
