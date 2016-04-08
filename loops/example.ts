@@ -8,12 +8,12 @@ while(count < 10) {
   count++;
 }
 
-var list = ["A", "B", "C", "D", "E", "F", "G", "H", "J", "K"];
+var array = ["A", "B", "C", "D", "E", "F", "G", "H", "J", "K"];
 
-for (var index = 0; index < list.length; index++) {
-  console.log(index, list[index]);
+for (var index = 0; index < array.length; index++) {
+  console.log(index + array[index]);
 }
 
-list.forEach((index) => console.log(index));
+array.forEach((index) => console.log(index));
 
-list.forEach((item, index) => console.log(index, item));
+array.forEach((item, index) => console.log(index + item));
