@@ -1,4 +1,4 @@
-name = "Jacquotte Delahaye"
-count = 7
-sentence = "%(name)s sailed the %(count)s seas." % locals()
+question = "ultimate question of life, the universe, and everything"
+answer = 42
+sentence = "The answer to the %(question)s is %(answer)s." % locals()
 print(sentence)

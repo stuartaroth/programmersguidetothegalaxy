@@ -1,4 +1,4 @@
-#syntaxlookup
+#programmersguidetothegalaxy
 
 The goal of this project is to provide easy syntax lookup across languages for normal programming needs.
 

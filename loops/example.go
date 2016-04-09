@@ -14,15 +14,23 @@ func main() {
 		count++
 	}
 
-	list := []string{"A", "B", "C", "D", "E", "F", "G", "H", "I", "J"}
+	list := []string{
+		"The Hitchhiker's Guide to the Galaxy",
+		"The Restaurant at the End of the Universe",
+		"Life, the Universe and Everything",
+		"So Long, and Thanks for All the Fish",
+		"Mostly Harmless",
+	}
 
 	for index := 0; index < len(list); index++ {
 		fmt.Print(index)
+		fmt.Print(" ")
 		fmt.Println(list[index])
 	}
 
 	for index, item := range list {
 		fmt.Print(index)
+		fmt.Print(" ")
 		fmt.Println(item)
 	}
 

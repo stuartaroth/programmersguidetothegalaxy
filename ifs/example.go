@@ -3,28 +3,28 @@ package main
 import "fmt"
 
 func conditionalBoolean(value bool) string {
-	if value == true {
-		return "Value is true"
+	if value {
+		return "value is true"
 	} else {
-		return "Value is false"
+		return "value is false"
 	}
 }
 
 func conditionalInt(value int) string {
 	if value < 0 {
-		return "Value is negative"
+		return "value is negative"
 	} else if value > 0 {
-		return "Value is positive"
+		return "value is positive"
 	} else {
-		return "Value is zero"
+		return "value is zero"
 	}
 }
 
 func conditionalString(value string) string {
-	if value == "rum" {
-		return "Yarr thanks for the rum!"
+	if value == "tea" {
+		return "Thanks for the tea!"
 	} else {
-		return "Yerr do you have any rum?"
+		return "Do you have any tea?"
 	}
 }
 
@@ -54,10 +54,10 @@ func main() {
 	zeroResponse := conditionalInt(0)
 	fmt.Println(zeroResponse)
 
-	rumResponse := conditionalString("rum")
+	rumResponse := conditionalString("tea")
 	fmt.Println(rumResponse)
 
-	nonRumResponse := conditionalString("grog")
+	nonRumResponse := conditionalString("almost, but not quite, entirely unlike tea")
 	fmt.Println(nonRumResponse)
 
 	andResponse := conditionalAndOr(13, 34)

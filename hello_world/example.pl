@@ -1,4 +1,4 @@
 use strict;
 use warnings;
 
-print "Hello World"."\n";
+print "Don't panic"."\n";

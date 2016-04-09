@@ -15,10 +15,16 @@ class Example {
             count++;
         }
 
-        String[] array = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J"};
+        String[] array = {
+                "The Hitchhiker's Guide to the Galaxy",
+                "The Restaurant at the End of the Universe",
+                "Life, the Universe and Everything",
+                "So Long, and Thanks for All the Fish",
+                "Mostly Harmless"
+        };
 
         for (int index = 0; index < array.length; index++) {
-            System.out.print(index);
+            System.out.print(index + " ");
             System.out.println(array[index]);
         }
 
@@ -29,7 +35,7 @@ class Example {
         List<String> list = Arrays.asList(array);
 
         for (int index = 0; index < list.size(); index++) {
-            System.out.print(index);
+            System.out.print(index + " ");
             System.out.println(list.get(index));
         }
 

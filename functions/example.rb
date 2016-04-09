@@ -1,13 +1,13 @@
-def add(x, y)
-  return x + y
+def multiply(x, y)
+  return x * y
 end
 
 def greeting(name)
   return "Hello " + name
 end
 
-i = add(4, 3)
+i = multiply(6, 9)
 puts i
 
-s = greeting("Henry Morgan")
+s = greeting("Ford Prefect")
 puts s

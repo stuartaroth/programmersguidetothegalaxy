@@ -1,27 +1,27 @@
 class Example {
     public static String conditionalBoolean(boolean value) {
         if (value) {
-            return "Value is true";
+            return "value is true";
         } else {
-            return "Value is false";
+            return "value is false";
         }
     }
 
     public static String conditionalInt(int value) {
         if (value < 0) {
-            return "Value is negative";
+            return "value is negative";
         } else if (value > 0) {
-            return "Value is positive";
+            return "value is positive";
         } else {
-            return "Value is zero";
+            return "value is zero";
         }
     }
 
     public static String conditionalString(String value) {
-        if (value.equals("rum")) {
-            return "Yarr thanks for the rum!";
+        if (value.equals("tea")) {
+            return "Thanks for the tea!";
         } else {
-            return "Yerr do you have any rum?";
+            return "Do you have any tea?";
         }
     }
 
@@ -51,10 +51,10 @@ class Example {
         String zeroResponse = conditionalInt(0);
         System.out.println(zeroResponse);
 
-        String rumResponse = conditionalString("rum");
+        String rumResponse = conditionalString("tea");
         System.out.println(rumResponse);
 
-        String nonRumResponse = conditionalString("grog");
+        String nonRumResponse = conditionalString("almost, but not quite, entirely unlike tea");
         System.out.println(nonRumResponse);
 
         String andResponse = conditionalAndOr(13, 34);

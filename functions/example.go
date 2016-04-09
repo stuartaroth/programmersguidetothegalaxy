@@ -2,8 +2,8 @@ package main
 
 import "fmt"
 
-func add(x int, y int) int {
-	return x + y
+func multiply(x int, y int) int {
+	return x * y
 }
 
 func greeting(name string) string {
@@ -11,9 +11,9 @@ func greeting(name string) string {
 }
 
 func main() {
-	i := add(4, 3)
+	i := multiply(6, 9)
 	fmt.Println(i)
 
-	s := greeting("Henry Morgan")
+	s := greeting("Ford Prefect")
 	fmt.Println(s)
 }

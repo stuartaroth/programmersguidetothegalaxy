@@ -1,19 +1,19 @@
-def conditionalBoolean(value: Boolean) = if(value) "Value is true" else "Value is false"
+def conditionalBoolean(value: Boolean) = if(value) "value is true" else "value is false"
 
 def conditionalInt(value: Int) = {
   if(value < 0)
-    "Value is negative"
+    "value is negative"
   else if(value > 0)
-    "Value is positive"
+    "value is positive"
   else
-    "Value is zero"
+    "value is zero"
 }
 
 def conditionalString(value: String) = {
-  if(value == "rum")
-    "Yarr thanks for the rum!"
+  if(value == "tea")
+    "Thanks for the tea!"
   else
-    "Yerr do you have any rum?"
+    "Do you have any tea?"
 }
 
 def conditionalAndOr(x: Int, y: Int) = {
@@ -40,10 +40,10 @@ println(positiveResponse)
 val zeroResponse = conditionalInt(0)
 println(zeroResponse)
 
-val rumResponse = conditionalString("rum")
+val rumResponse = conditionalString("tea")
 println(rumResponse)
 
-val nonRumResponse = conditionalString("grog")
+val nonRumResponse = conditionalString("almost, but not quite, entirely unlike tea")
 println(nonRumResponse)
 
 val andResponse = conditionalAndOr(13, 34)

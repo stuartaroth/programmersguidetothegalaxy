@@ -1,9 +1,13 @@
-var add = (x:number, y:number):number => x + y;
+function multiply(x:number, y:number):number {
+    return x * y;
+}
 
-var greeting = (name:string):string => "Hello " + name;
+function greeting(name:string):string {
+    return "Hello " + name;
+}
 
-var i = add(4, 3);
+var i = multiply(6, 9);
 console.log(i);
 
-var s = greeting("Henry Morgan");
+var s = greeting("Ford Prefect");
 console.log(s);

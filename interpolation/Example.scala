@@ -1,4 +1,4 @@
-val name = "Jacquotte Delahaye"
-val count = 7
-val sentence = s"$name sailed the $count seas."
+val question = "ultimate question of life, the universe, and everything"
+val answer = 42
+val sentence = s"The answer to the $question is $answer."
 println(sentence)

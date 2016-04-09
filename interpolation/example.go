@@ -3,8 +3,8 @@ package main
 import "fmt"
 
 func main() {
-	name := "Jacquotte Delahaye"
-	count := 7
-	sentence := fmt.Sprintf("%s sailed the %d seas.", name, count)
+	question := "ultimate question of life, the universe, and everything"
+	answer := 42
+	sentence := fmt.Sprintf("The answer to the %s is %d.", question, answer)
 	fmt.Println(sentence)
 }

@@ -1,6 +1,6 @@
 class Example {
-    public static int add(int x, int y) {
-        return x + y;
+    public static int multiply(int x, int y) {
+        return x * y;
     }
 
     public static String greeting(String name) {
@@ -8,10 +8,10 @@ class Example {
     }
 
     public static void main(String[] args) {
-        int i = add(4, 3);
+        int i = multiply(6, 9);
         System.out.println(i);
 
-        String s = greeting("Henry Morgan");
+        String s = greeting("Ford Prefect");
         System.out.println(s);
     }
 }

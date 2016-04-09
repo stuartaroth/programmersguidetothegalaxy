@@ -12,17 +12,23 @@ while(count < 10) {
   count += 1
 }
 
-val list = List("A", "B", "C", "D", "E", "F", "G", "H", "I", "J")
+val list = List(
+  "The Hitchhiker's Guide to the Galaxy",
+  "The Restaurant at the End of the Universe",
+  "Life, the Universe and Everything",
+  "So Long, and Thanks for All the Fish",
+  "Mostly Harmless"
+)
 
 for(index <- list) println(index)
 
 for(index <- 0 until list.length) {
-  print(index)
+  print(index + " ")
   println(list(index))
 }
 
 for(index <- list.indices) {
-  print(index)
+  print(index + " ")
   println(list(index))
 }
 

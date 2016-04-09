@@ -50,7 +50,7 @@ print(zeroResponse)
 rumResponse = conditionalString("rum")
 print(rumResponse)
 
-nonRumResponse = conditionalString("grog")
+nonRumResponse = conditionalString("almost, but not quite, entirely unlike tea")
 print(nonRumResponse)
 
 andResponse = conditionalAndOr(13, 34)

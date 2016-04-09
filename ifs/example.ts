@@ -1,26 +1,26 @@
 var conditionalBoolean = (value:boolean) => {
     if (value) {
-        return "Value is true";
+        return "value is true";
     } else {
-        return "Value is false";
+        return "value is false";
     }
 };
 
 var conditionalInt = (value:number) => {
     if (value < 0) {
-        return "Value is negaive";
+        return "value is negaive";
     } else if (value > 0) {
-        return "Value is positive";
+        return "value is positive";
     } else {
-        return "Value is zero";
+        return "value is zero";
     }
 };
 
 var conditionalString = (value:string) => {
-    if (value == "rum") {
-        return "Yarr thanks for the rum!"
+    if (value == "tea") {
+        return "Thanks for the tea!"
     } else {
-        return "Yerr do you have any rum?"
+        return "Do you have any tea?"
     }
 };
 
@@ -36,9 +36,9 @@ var conditionalAndOr = (x:number, y:number) => {
 
 var conditionalTruthyFalsy = (value:any) => {
     if (value) {
-        return "Value is truthy";
+        return "value is truthy";
     } else {
-        return "Value is falsy";
+        return "value is falsy";
     }
 };
 
@@ -57,10 +57,10 @@ console.log(positiveResponse);
 var zeroResponse = conditionalInt(0);
 console.log(zeroResponse);
 
-var rumResponse = conditionalString("rum");
+var rumResponse = conditionalString("tea");
 console.log(rumResponse);
 
-var nonRumResponse = conditionalString("grog");
+var nonRumResponse = conditionalString("almost, but not quite, entirely unlike tea");
 console.log(nonRumResponse);
 
 var andResponse = conditionalAndOr(13, 34);

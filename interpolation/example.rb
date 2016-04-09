@@ -1,4 +1,4 @@
-name = "Jacquotte Delahaye"
-count = 7
-sentence = "#{name} sailed the #{count} seas."
+question = "ultimate question of life, the universe, and everything"
+answer = 42
+sentence = "The answer to the #{question} is #{answer}."
 puts sentence

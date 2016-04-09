@@ -1,9 +1,9 @@
 use strict;
 use warnings;
 
-sub add {
+sub multiply {
     my ($x, $y) = @_;
-    return $x + $y;
+    return $x * $y;
 }
 
 sub greeting {
@@ -11,8 +11,8 @@ sub greeting {
     return "Hello ".$name;
 }
 
-my $i = add( 4, 3 );
+my $i = multiply( 6, 9 );
 print $i."\n";
 
-my $s = greeting( "Henry Morgan" );
+my $s = greeting( "Ford Prefect" );
 print $s."\n";

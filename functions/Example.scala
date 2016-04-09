@@ -1,9 +1,9 @@
-def add(x: Int, y: Int) = x + y
+def multiply(x: Int, y: Int) = x * y
 
 def greeting(name: String) = "Hello " + name
 
-val i = add(4, 3)
+val i = multiply(6, 9)
 println(i)
 
-val s = greeting("Henry Morgan")
+val s = greeting("Ford Prefect")
 println(s)

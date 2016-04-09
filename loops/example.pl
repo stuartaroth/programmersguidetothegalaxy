@@ -11,10 +11,16 @@ while($count < 10) {
     $count++;
 }
 
-my @list = ("A", "B", "C", "D", "E", "F", "G", "H", "J", "K");
+my @list = (
+    "The Hitchhiker's Guide to the Galaxy",
+    "The Restaurant at the End of the Universe",
+    "Life, the Universe and Everything",
+    "So Long, and Thanks for All the Fish",
+    "Mostly Harmless"
+);
 
 for (my $index = 0; $index < scalar @list; $index++) {
-    print $index;
+    print $index." ";
     print $list[$index]."\n";
 }
 

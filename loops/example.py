@@ -6,10 +6,16 @@ while count < 10:
   print(count)
   count += 1
 
-list = ["A", "B", "C", "D", "E", "F", "G", "H", "J", "K"]
+list = [
+    "The Hitchhiker's Guide to the Galaxy",
+    "The Restaurant at the End of the Universe",
+    "Life, the Universe and Everything",
+    "So Long, and Thanks for All the Fish",
+    "Mostly Harmless"
+]
 
 for index in range(len(list)):
-  print(str(index) + list[index])
+  print(str(index) + " " + list[index])
 
 for item in list:
   print(item)

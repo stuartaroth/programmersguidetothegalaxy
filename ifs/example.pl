@@ -23,10 +23,10 @@ sub conditionalInt {
 
 sub conditionalString {
     my ($value) = @_;
-    if ($value eq "rum") {
-        return "Yarr thanks for the rum!";
+    if ($value eq "tea") {
+        return "Thanks for the tea!";
     } else {
-        return "Yerr do you have any rum?";
+        return "Do you have any tea?";
     }
 }
 
@@ -65,10 +65,10 @@ print $positiveResponse."\n";
 my $zeroResponse = conditionalInt( 0 );
 print $zeroResponse."\n";
 
-my $rumResponse = conditionalString( "rum" );
+my $rumResponse = conditionalString( "tea" );
 print $rumResponse."\n";
 
-my $nonRumResponse = conditionalString( "grog" );
+my $nonRumResponse = conditionalString( "almost, but not quite, entirely unlike tea" );
 print $nonRumResponse."\n";
 
 my $andResponse = conditionalAndOr( 13, 34 );

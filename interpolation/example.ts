@@ -1,4 +1,4 @@
-var name = "Jacquotte Delahaye";
-var count = 7;
-var sentence = `${name} sailed the ${count} seas.`;
+var question = "ultimate question of life, the universe, and everything";
+var answer = 42;
+var sentence = `The answer to the ${question} is ${answer}.`;
 console.log(sentence);

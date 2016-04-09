@@ -8,12 +8,18 @@ while (count < 10) {
     count++;
 }
 
-var array = ["A", "B", "C", "D", "E", "F", "G", "H", "J", "K"];
+var array = [
+    "The Hitchhiker's Guide to the Galaxy",
+    "The Restaurant at the End of the Universe",
+    "Life, the Universe and Everything",
+    "So Long, and Thanks for All the Fish",
+    "Mostly Harmless"
+];
 
 for (var index = 0; index < array.length; index++) {
-    console.log(index + array[index]);
+    console.log(index + " " + array[index]);
 }
 
 array.forEach((index) => console.log(index));
 
-array.forEach((item, index) => console.log(index + item));
+array.forEach((item, index) => console.log(index + " " + item));

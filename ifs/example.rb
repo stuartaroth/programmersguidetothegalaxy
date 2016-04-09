@@ -17,10 +17,10 @@ def conditionalInt(value)
 end
 
 def conditionalString(value)
-  if value == "rum"
-    return "Yarr thanks for the rum!"
+  if value == "tea"
+    return "Thanks for the tea!"
   else
-    return "Yerr do you have any rum?"
+    return "Do you have any tea?"
   end
 end
 
@@ -57,10 +57,10 @@ puts positiveResponse
 zeroResponse = conditionalInt(0)
 puts zeroResponse
 
-rumResponse = conditionalString("rum")
+rumResponse = conditionalString("tea")
 puts rumResponse
 
-nonRumResponse = conditionalString("grog")
+nonRumResponse = conditionalString("almost, but not quite, entirely unlike tea")
 puts nonRumResponse
 
 andResponse = conditionalAndOr(13, 34)
