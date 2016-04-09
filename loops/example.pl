@@ -1,8 +1,8 @@
 use strict;
 use warnings;
 
-for (my $index = 0; $index < 10; $index++) {
-    print $index."\n";
+for (my $i = 0; $i < 10; $i++) {
+    print $i."\n";
 }
 
 my $count = 0;
@@ -19,9 +19,9 @@ my @list = (
     "Mostly Harmless"
 );
 
-for (my $index = 0; $index < scalar @list; $index++) {
-    print $index." ";
-    print $list[$index]."\n";
+for (my $i = 0; $i < scalar @list; $i++) {
+    print $i." ";
+    print $list[$i]."\n";
 }
 
 foreach my $item (@list) {

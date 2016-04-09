@@ -4,8 +4,8 @@ import "fmt"
 
 func main() {
 
-	for index := 0; index < 10; index++ {
-		fmt.Println(index)
+	for i := 0; i < 10; i++ {
+		fmt.Println(i)
 	}
 
 	count := 0
@@ -22,14 +22,14 @@ func main() {
 		"Mostly Harmless",
 	}
 
-	for index := 0; index < len(list); index++ {
-		fmt.Print(index)
+	for i := 0; i < len(list); i++ {
+		fmt.Print(i)
 		fmt.Print(" ")
-		fmt.Println(list[index])
+		fmt.Println(list[i])
 	}
 
-	for index, item := range list {
-		fmt.Print(index)
+	for i, item := range list {
+		fmt.Print(i)
 		fmt.Print(" ")
 		fmt.Println(item)
 	}

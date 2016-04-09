@@ -1,5 +1,5 @@
-for index in range(0, 10):
-  print(index)
+for i in range(0, 10):
+  print(i)
 
 count = 0
 while count < 10:
@@ -14,8 +14,8 @@ list = [
     "Mostly Harmless"
 ]
 
-for index in range(len(list)):
-  print(str(index) + " " + list[index])
+for i in range(len(list)):
+  print(str(i) + " " + list[i])
 
 for item in list:
   print(item)

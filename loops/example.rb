@@ -1,9 +1,9 @@
-for index in 0...10
-  puts index
+for i in 0...10
+  puts i
 end
 
-for index in 0..9
-  puts index
+for i in 0..9
+  puts i
 end
 
 count = 0
@@ -21,10 +21,10 @@ array = [
 ]
 
 
-for index in 0...array.length
-  puts index.to_s + " " + array[index]
+for i in 0...array.length
+  puts i.to_s + " " + array[i]
 end
 
 array.each { |item| puts item }
 
-array.each_with_index { |item, index| puts index.to_s + " " + item }
+array.each_with_i { |item, i| puts i.to_s + " " + item }

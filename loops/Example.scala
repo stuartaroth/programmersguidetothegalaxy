@@ -1,6 +1,6 @@
-for(index <- 0 until 10) println(index)
+for(i <- 0 until 10) println(i)
 
-for(index <- 0 to 9) println(index)
+for(i <- 0 to 9) println(i)
 
 0 until 10 foreach println
 
@@ -20,16 +20,16 @@ val list = List(
   "Mostly Harmless"
 )
 
-for(index <- list) println(index)
+for(i <- list) println(i)
 
-for(index <- 0 until list.length) {
-  print(index + " ")
-  println(list(index))
+for(i <- 0 until list.length) {
+  print(i + " ")
+  println(list(i))
 }
 
-for(index <- list.indices) {
-  print(index + " ")
-  println(list(index))
+for(i <- list.indices) {
+  print(i + " ")
+  println(list(i))
 }
 
 list.foreach {

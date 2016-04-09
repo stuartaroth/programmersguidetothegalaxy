@@ -1,5 +1,5 @@
-for (var index = 0; index < 10; index++) {
-    console.log(index);
+for (var i = 0; i < 10; i++) {
+    console.log(i);
 }
 
 var count = 0;
@@ -16,10 +16,10 @@ var array = [
     "Mostly Harmless"
 ];
 
-for (var index = 0; index < array.length; index++) {
-    console.log(index + " " + array[index]);
+for (var i = 0; i < array.length; i++) {
+    console.log(i + " " + array[i]);
 }
 
-array.forEach((index) => console.log(index));
+array.forEach((i) => console.log(i));
 
-array.forEach((item, index) => console.log(index + " " + item));
+array.forEach((item, i) => console.log(i + " " + item));

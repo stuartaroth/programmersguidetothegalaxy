@@ -5,8 +5,8 @@ import java.util.Iterator;
 class Example {
     public static void main(String[] args) {
 
-        for (int index = 0; index < 10; index++) {
-            System.out.println(index);
+        for (int i = 0; i < 10; i++) {
+            System.out.println(i);
         }
 
         int count = 0;
@@ -23,9 +23,9 @@ class Example {
                 "Mostly Harmless"
         };
 
-        for (int index = 0; index < array.length; index++) {
-            System.out.print(index + " ");
-            System.out.println(array[index]);
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(i + " ");
+            System.out.println(array[i]);
         }
 
         for (String item : array) {
@@ -34,9 +34,9 @@ class Example {
 
         List<String> list = Arrays.asList(array);
 
-        for (int index = 0; index < list.size(); index++) {
-            System.out.print(index + " ");
-            System.out.println(list.get(index));
+        for (int i = 0; i < list.size(); i++) {
+            System.out.print(i + " ");
+            System.out.println(list.get(i));
         }
 
         for (String item : list) {
