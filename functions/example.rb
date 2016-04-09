@@ -2,12 +2,12 @@ def multiply(x, y)
   return x * y
 end
 
-def greeting(name)
+def greet_person(name)
   return "Hello " + name
 end
 
 i = multiply(6, 9)
 puts i
 
-s = greeting("Ford Prefect")
+s = greet_person("Ford Prefect")
 puts s

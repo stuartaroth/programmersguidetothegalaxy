@@ -1,7 +1,7 @@
-firstName = "Arthur"
-lastName = "Dent"
-fullName = firstName + " " + lastName
-print(fullName)
+first_name = "Arthur"
+last_name = "Dent"
+full_name = first_name + " " + last_name
+print(full_name)
 
 x = 13
 y = 29

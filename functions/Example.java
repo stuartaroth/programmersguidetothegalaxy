@@ -3,7 +3,7 @@ class Example {
         return x * y;
     }
 
-    public static String greeting(String name) {
+    public static String greetPerson(String name) {
         return "Hello " + name;
     }
 
@@ -11,7 +11,7 @@ class Example {
         int i = multiply(6, 9);
         System.out.println(i);
 
-        String s = greeting("Ford Prefect");
+        String s = greetPerson("Ford Prefect");
         System.out.println(s);
     }
 }

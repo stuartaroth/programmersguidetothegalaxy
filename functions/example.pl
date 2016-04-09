@@ -6,7 +6,7 @@ sub multiply {
     return $x * $y;
 }
 
-sub greeting {
+sub greet_person {
     my ($name) = @_;
     return "Hello ".$name;
 }
@@ -14,5 +14,5 @@ sub greeting {
 my $i = multiply( 6, 9 );
 print $i."\n";
 
-my $s = greeting( "Ford Prefect" );
+my $s = greet_person( "Ford Prefect" );
 print $s."\n";

@@ -1,22 +1,22 @@
-def conditionalBoolean(value)
+def conditional_boolean(value)
   if value
-    return "Value is true"
+    return "value is true"
   else
-   return "Value is false"
+   return "value is false"
   end
 end
 
-def conditionalInt(value)
+def conditional_int(value)
   if value < 0
-    return "Value is negative"
+    return "value is negative"
   elsif value > 0
-    return "Value is positive"
+    return "value is positive"
   else
-    return "Value is zero"
+    return "value is zero"
   end
 end
 
-def conditionalString(value)
+def conditional_string(value)
   if value == "tea"
     return "Thanks for the tea!"
   else
@@ -34,66 +34,66 @@ def conditionalAndOr(x, y)
   end
 end
 
-def conditionalTruthyFalsy(value)
+def conditional_truthy_falsy(value)
   if value
-    return "Value is truthy"
+    return "value is truthy"
   else
-    return "Value is falsy"
+    return "value is falsy"
   end
 end
 
-trueResponse = conditionalBoolean(true)  
-puts trueResponse
+true_response = conditional_boolean(true)  
+puts true_response
 
-falseResponse = conditionalBoolean(false)
-puts falseResponse
+false_response = conditional_boolean(false)
+puts false_response
 
-negativeResponse = conditionalInt(-1)
-puts negativeResponse
+negative_response = conditional_int(-1)
+puts negative_response
 
-positiveResponse = conditionalInt(1)
-puts positiveResponse
+positive_response = conditional_int(1)
+puts positive_response
 
-zeroResponse = conditionalInt(0)
-puts zeroResponse
+zero_response = conditional_int(0)
+puts zero_response
 
-rumResponse = conditionalString("tea")
-puts rumResponse
+rum_response = conditional_string("tea")
+puts rum_response
 
-nonRumResponse = conditionalString("almost, but not quite, entirely unlike tea")
-puts nonRumResponse
+nonRum_response = conditional_string("almost, but not quite, entirely unlike tea")
+puts nonRum_response
 
-andResponse = conditionalAndOr(13, 34)
-puts andResponse
+and_response = conditionalAndOr(13, 34)
+puts and_response
 
-orResponse = conditionalAndOr(7, -8)
-puts orResponse
+or_response = conditionalAndOr(7, -8)
+puts or_response
 
-elseResponse = conditionalAndOr(-12, 0)
-puts elseResponse
+else_response = conditionalAndOr(-12, 0)
+puts else_response
 
-truthyResponse1 = conditionalTruthyFalsy(true)
-truthyResponse2 = conditionalTruthyFalsy(1)
-truthyResponse3 = conditionalTruthyFalsy("true")
-truthyResponse4 = conditionalTruthyFalsy("false")
-truthyResponse5 = conditionalTruthyFalsy("")
-truthyResponse6 = conditionalTruthyFalsy(0)
-truthyResponse7 = conditionalTruthyFalsy("0")
-truthyResponse8 = conditionalTruthyFalsy([])
-truthyResponse9 = conditionalTruthyFalsy({})
+truthy_response_1 = conditional_truthy_falsy(true)
+truthy_response_2 = conditional_truthy_falsy(1)
+truthy_response_3 = conditional_truthy_falsy("true")
+truthy_response_4 = conditional_truthy_falsy("false")
+truthy_response_5 = conditional_truthy_falsy("")
+truthy_response_6 = conditional_truthy_falsy(0)
+truthy_response_7 = conditional_truthy_falsy("0")
+truthy_response_8 = conditional_truthy_falsy([])
+truthy_response_9 = conditional_truthy_falsy({})
 
-puts truthyResponse1
-puts truthyResponse2
-puts truthyResponse3
-puts truthyResponse4
-puts truthyResponse5
-puts truthyResponse6
-puts truthyResponse7
-puts truthyResponse8
-puts truthyResponse9
+puts truthy_response_1
+puts truthy_response_2
+puts truthy_response_3
+puts truthy_response_4
+puts truthy_response_5
+puts truthy_response_6
+puts truthy_response_7
+puts truthy_response_8
+puts truthy_response_9
 
-falsyResponse1 = conditionalTruthyFalsy(false)
-falsyResponse2 = conditionalTruthyFalsy(nil)
+falsy_response_1 = conditional_truthy_falsy(false)
+falsy_response_2 = conditional_truthy_falsy(nil)
 
-puts falsyResponse1
-puts falsyResponse2
+puts falsy_response_1
+puts falsy_response_2

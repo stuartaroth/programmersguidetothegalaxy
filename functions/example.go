@@ -6,7 +6,7 @@ func multiply(x int, y int) int {
 	return x * y
 }
 
-func greeting(name string) string {
+func greetPerson(name string) string {
 	return "Hello " + name
 }
 
@@ -14,6 +14,6 @@ func main() {
 	i := multiply(6, 9)
 	fmt.Println(i)
 
-	s := greeting("Ford Prefect")
+	s := greetPerson("Ford Prefect")
 	fmt.Println(s)
 }

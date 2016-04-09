@@ -1,27 +1,27 @@
 use strict;
 use warnings;
 
-sub conditionalBoolean {
+sub conditional_boolean {
     my ($value) = @_;
     if ($value) {
-        return "Value is true";
+        return "value is true";
     } else {
-        return "Value is false";
+        return "value is false";
     }
 }
 
-sub conditionalInt {
+sub conditional_int {
     my ($value) = @_;
     if ($value < 0) {
-        return "Value is negative";
+        return "value is negative";
     } elsif ($value > 0) {
-        return "Value is positive";
+        return "value is positive";
     } else {
-        return "Value is zero";
+        return "value is zero";
     }
 }
 
-sub conditionalString {
+sub conditional_string {
     my ($value) = @_;
     if ($value eq "tea") {
         return "Thanks for the tea!";
@@ -30,7 +30,7 @@ sub conditionalString {
     }
 }
 
-sub conditionalAndOr {
+sub conditional_and_or {
     my ($x, $y) = @_;
     if ($x > 0 && $y > 0) {
         return "x and y are both positive";
@@ -41,61 +41,61 @@ sub conditionalAndOr {
     }
 }
 
-sub conditionalTruthyFalsy {
+sub conditional_truthy_falsy {
     my ($value) = @_;
     if ($value) {
-        return "Value is truthy";
+        return "value is truthy";
     } else {
-        return "Value is falsy";
+        return "value is falsy";
     }
 }
 
-my $trueResponse = conditionalBoolean( 1 );
-print $trueResponse."\n";
+my $true_response = conditional_boolean( 1 );
+print $true_response."\n";
 
-my $falseResponse = conditionalBoolean( 0 );
-print $falseResponse."\n";
+my $false_response = conditional_boolean( 0 );
+print $false_response."\n";
 
-my $negativeResponse = conditionalInt( -1 );
-print $negativeResponse."\n";
+my $negative_response = conditional_int( -1 );
+print $negative_response."\n";
 
-my $positiveResponse = conditionalInt( 1 );
-print $positiveResponse."\n";
+my $positive_response = conditional_int( 1 );
+print $positive_response."\n";
 
-my $zeroResponse = conditionalInt( 0 );
-print $zeroResponse."\n";
+my $zero_response = conditional_int( 0 );
+print $zero_response."\n";
 
-my $rumResponse = conditionalString( "tea" );
-print $rumResponse."\n";
+my $rum_response = conditional_string( "tea" );
+print $rum_response."\n";
 
-my $nonRumResponse = conditionalString( "almost, but not quite, entirely unlike tea" );
-print $nonRumResponse."\n";
+my $nonRum_response = conditional_string( "almost, but not quite, entirely unlike tea" );
+print $nonRum_response."\n";
 
-my $andResponse = conditionalAndOr( 13, 34 );
-print $andResponse."\n";
+my $and_response = conditional_and_or( 13, 34 );
+print $and_response."\n";
 
-my $orResponse = conditionalAndOr( 7, -8 );
-print $orResponse."\n";
+my $or_response = conditional_and_or( 7, -8 );
+print $or_response."\n";
 
-my $elseResponse = conditionalAndOr( -12, 0 );
-print $elseResponse."\n";
+my $else_response = conditional_and_or( -12, 0 );
+print $else_response."\n";
 
-my $truthyResponse1 = conditionalTruthyFalsy( 1 );
-my $truthyResponse2 = conditionalTruthyFalsy( "bumbo" );
-my $truthyResponse3 = conditionalTruthyFalsy( "true" );
-my $truthyResponse4 = conditionalTruthyFalsy( "false" );
+my $truthy_response_1 = conditional_truthy_falsy( 1 );
+my $truthy_response_2 = conditional_truthy_falsy( "bumbo" );
+my $truthy_response_3 = conditional_truthy_falsy( "true" );
+my $truthy_response_4 = conditional_truthy_falsy( "false" );
 
-print $truthyResponse1."\n";
-print $truthyResponse2."\n";
-print $truthyResponse3."\n";
-print $truthyResponse4."\n";
+print $truthy_response_1."\n";
+print $truthy_response_2."\n";
+print $truthy_response_3."\n";
+print $truthy_response_4."\n";
 
-my $falsyResponse1 = conditionalTruthyFalsy( 0 );
-my $falsyResponse2 = conditionalTruthyFalsy( "" );
-my $falsyResponse3 = conditionalTruthyFalsy( "0" );
-my $falsyResponse4 = conditionalTruthyFalsy( undef );
+my $falsy_response_1 = conditional_truthy_falsy( 0 );
+my $falsy_response_2 = conditional_truthy_falsy( "" );
+my $falsy_response_3 = conditional_truthy_falsy( "0" );
+my $falsy_response_4 = conditional_truthy_falsy( undef );
 
-print $falsyResponse1."\n";
-print $falsyResponse2."\n";
-print $falsyResponse3."\n";
-print $falsyResponse4."\n";
+print $falsy_response_1."\n";
+print $falsy_response_2."\n";
+print $falsy_response_3."\n";
+print $falsy_response_4."\n";

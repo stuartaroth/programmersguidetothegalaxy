@@ -1,22 +1,22 @@
-def conditionalBoolean(value):
+def conditional_boolean(value):
   if value:
-    return "Value is true"
+    return "value is true"
   else:
-   return "Value is false"
+   return "value is false"
 
-def conditionalInt(value):
+def conditional_int(value):
   if value < 0:
-    return "Value is negative"
+    return "value is negative"
   elif value > 0:
-    return "Value is positive"
+    return "value is positive"
   else:
-    return "Value is zero"
+    return "value is zero"
 
-def conditionalString(value):
-  if value == "rum":
-    return "Yarr thanks for the rum!"
+def conditional_string(value):
+  if value == "tea":
+    return "Thanks for the tea!"
   else:
-    return "Yerr do you have any rum?"
+    return "Do you have any tea?"
 
 def conditionalAndOr(x, y):
   if x > 0 and y > 0:
@@ -26,68 +26,68 @@ def conditionalAndOr(x, y):
   else:
     return "x and y are both 0 or negative"
 
-def conditionalTruthyFalsy(value):
+def conditional_truthy_falsy(value):
   if value:
-    return "Value is truthy"
+    return "value is truthy"
   else:
-    return "Value is falsy"
+    return "value is falsy"
 
-trueResponse = conditionalBoolean(True)
-print(trueResponse)
+true_response = conditional_boolean(True)
+print(true_response)
 
-falseResponse = conditionalBoolean(False)
-print(falseResponse)
+false_response = conditional_boolean(False)
+print(false_response)
 
-negativeResponse = conditionalInt(-1)
-print(negativeResponse)
+negative_response = conditional_int(-1)
+print(negative_response)
 
-positiveResponse = conditionalInt(1)
-print(positiveResponse)
+positive_response = conditional_int(1)
+print(positive_response)
 
-zeroResponse = conditionalInt(0)
-print(zeroResponse)
+zero_response = conditional_int(0)
+print(zero_response)
 
-rumResponse = conditionalString("rum")
-print(rumResponse)
+rum_response = conditional_string("tea")
+print(rum_response)
 
-nonRumResponse = conditionalString("almost, but not quite, entirely unlike tea")
-print(nonRumResponse)
+nonRum_response = conditional_string("almost, but not quite, entirely unlike tea")
+print(nonRum_response)
 
-andResponse = conditionalAndOr(13, 34)
-print(andResponse)
+and_response = conditionalAndOr(13, 34)
+print(and_response)
 
-orResponse = conditionalAndOr(7, -8)
-print(orResponse)
+or_response = conditionalAndOr(7, -8)
+print(or_response)
 
-elseResponse = conditionalAndOr(-12, 0)
-print(elseResponse)
+else_response = conditionalAndOr(-12, 0)
+print(else_response)
 
-truthyResponse1 = conditionalTruthyFalsy(True)
-truthyResponse2 = conditionalTruthyFalsy(1)
-truthyResponse3 = conditionalTruthyFalsy("bumbo")
-truthyResponse4 = conditionalTruthyFalsy("true")
-truthyResponse5 = conditionalTruthyFalsy("false")
-truthyResponse6 = conditionalTruthyFalsy("0")
+truthy_response_1 = conditional_truthy_falsy(True)
+truthy_response_2 = conditional_truthy_falsy(1)
+truthy_response_3 = conditional_truthy_falsy("bumbo")
+truthy_response_4 = conditional_truthy_falsy("true")
+truthy_response_5 = conditional_truthy_falsy("false")
+truthy_response_6 = conditional_truthy_falsy("0")
 
-print(truthyResponse1)
-print(truthyResponse2)
-print(truthyResponse3)
-print(truthyResponse4)
-print(truthyResponse5)
-print(truthyResponse6)
+print(truthy_response_1)
+print(truthy_response_2)
+print(truthy_response_3)
+print(truthy_response_4)
+print(truthy_response_5)
+print(truthy_response_6)
 
-falsyResponse1 = conditionalTruthyFalsy(False)
-falsyResponse2 = conditionalTruthyFalsy(0)
-falsyResponse3 = conditionalTruthyFalsy("")
-falsyResponse4 = conditionalTruthyFalsy(None)
-falsyResponse5 = conditionalTruthyFalsy([])
-falsyResponse6 = conditionalTruthyFalsy({})
-falsyResponse7 = conditionalTruthyFalsy(())
+falsy_response_1 = conditional_truthy_falsy(False)
+falsy_response_2 = conditional_truthy_falsy(0)
+falsy_response_3 = conditional_truthy_falsy("")
+falsy_response_4 = conditional_truthy_falsy(None)
+falsy_response_5 = conditional_truthy_falsy([])
+falsy_response_6 = conditional_truthy_falsy({})
+falsy_response_7 = conditional_truthy_falsy(())
 
-print(falsyResponse1)
-print(falsyResponse2)
-print(falsyResponse3)
-print(falsyResponse4)
-print(falsyResponse5)
-print(falsyResponse6)
-print(falsyResponse7)
+print(falsy_response_1)
+print(falsy_response_2)
+print(falsy_response_3)
+print(falsy_response_4)
+print(falsy_response_5)
+print(falsy_response_6)
+print(falsy_response_7)
