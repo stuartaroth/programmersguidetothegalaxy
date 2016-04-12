@@ -38,7 +38,7 @@ func main() {
 
 	hashMap2 := map[string]string{
 		"Trillian": "Earth",
-		"Fenway": "Earth",
+		"Fenchurch": "Earth",
 	}
 
 	for key, value := range hashMap2 {

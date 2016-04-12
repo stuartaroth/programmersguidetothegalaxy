@@ -31,7 +31,7 @@ console.log(reducedItemCount);
 
 var hashMap2 = {
     "Trillian": "Earth",
-    "Fenway": "Earth"
+    "Fenchurch": "Earth"
 };
 
 for(var key in hashMap2) {
