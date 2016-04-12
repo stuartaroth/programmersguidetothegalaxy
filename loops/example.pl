@@ -2,12 +2,12 @@ use strict;
 use warnings;
 
 for (my $i = 0; $i < 10; $i++) {
-    print $i."\n";
+    print "$i\n";
 }
 
 my $count = 0;
 while($count < 10) {
-    print $count."\n";
+    print "$count\n";
     $count++;
 }
 
@@ -20,14 +20,13 @@ my @list = (
 );
 
 for (my $i = 0; $i < scalar @list; $i++) {
-    print $i." ";
-    print $list[$i]."\n";
+    print "$i $list[$i]\n";
 }
 
 foreach my $item (@list) {
-    print $item."\n";
+    print "$item\n";
 }
 
 foreach (@list) {
-    print $_."\n";
+    print "$_\n";
 }
