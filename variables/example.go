@@ -4,12 +4,23 @@ import "fmt"
 
 func main() {
 	firstName := "Arthur"
+	// "Arthur"
+
 	lastName := "Dent"
+	// "Dent"
+
 	fullName := firstName + " " + lastName
-	fmt.Println(fullName)
+	// "Arthur Dent"
 
 	x := 13
+	// 13
+
 	y := 29
+	// 29
+
 	z := x + y
+	// 42
+
+	fmt.Println(fullName)
 	fmt.Println(z)
 }
