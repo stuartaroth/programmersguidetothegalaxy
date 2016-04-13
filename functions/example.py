@@ -5,7 +5,7 @@ def greet_person(name):
   return "Hello " + name
 
 i = multiply(6, 9)
-print(i)
+# 54
 
 s = greet_person("Ford Prefect")
-print(s)
+# "Hello Ford Prefect"

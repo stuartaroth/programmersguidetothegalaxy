@@ -9,9 +9,9 @@ class Example {
 
     public static void main(String[] args) {
         int i = multiply(6, 9);
-        System.out.println(i);
+        // 54
 
         String s = greetPerson("Ford Prefect");
-        System.out.println(s);
+        // "Hello Ford Prefect"
     }
 }

@@ -11,7 +11,7 @@ sub greet_person {
 }
 
 my $i = multiply( 6, 9 );
-print "$i\n";
+# 54
 
 my $s = greet_person( "Ford Prefect" );
-print "$s\n";
+# "Hello Ford Prefect"

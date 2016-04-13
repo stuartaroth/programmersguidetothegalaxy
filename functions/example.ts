@@ -7,7 +7,7 @@ function greetPerson(name:string):string {
 }
 
 var i = multiply(6, 9);
-console.log(i);
+// 54
 
 var s = greetPerson("Ford Prefect");
-console.log(s);
+// "Hello Ford Prefect"

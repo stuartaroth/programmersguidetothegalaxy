@@ -12,8 +12,8 @@ func greetPerson(name string) string {
 
 func main() {
 	i := multiply(6, 9)
-	fmt.Println(i)
+	// 54
 
 	s := greetPerson("Ford Prefect")
-	fmt.Println(s)
+	// "Hello Ford Prefect"
 }
