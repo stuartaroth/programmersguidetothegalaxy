@@ -1,5 +1,4 @@
 use strict;
-use warnings;
 
 sub multiply {
     my ($x, $y) = @_;

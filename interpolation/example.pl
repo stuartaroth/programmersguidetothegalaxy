@@ -1,5 +1,4 @@
 use strict;
-use warnings;
 
 my $question = "ultimate question of life, the universe, and everything";
 my $answer = 42;

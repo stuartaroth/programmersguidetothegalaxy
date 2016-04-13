@@ -3,43 +3,42 @@ import java.util.HashMap;
 class Example {
     public static void main(String[] args) {
         HashMap<String, String> hashMap = new HashMap<String, String>();
-        hashMap.put("Arthur Dent", "Earth");
-        hashMap.put("Ford Prefect", "Betelgeuse Seven");
+        // {}
+
         hashMap.put("Zaphod Beeblebrox", "Betelgeuse Five");
+        // { "Zaphod Beeblebrox":"Betelgeuse Five" }
+
         hashMap.put("Marvin", "Sirius");
+        // { "Zaphod Beeblebrox":"Betelgeuse Five" , "Marvin":"Sirius" }
 
-        String presentValue1 = hashMap.get("Zaphod Beeblebrox");
-        System.out.println(presentValue1);
+        String presentValue = hashMap.get("Zaphod Beeblebrox");
+        // "Betelgeuse Five"
 
-        String missingValue1 = hashMap.get("Fenchurch");
-        System.out.println(missingValue1);
+        String missingValue = hashMap.get("Fenchurch");
+        // null
 
-        boolean isPresentValue1 = hashMap.containsKey("Arthur Dent");
-        System.out.println(isPresentValue1);
+        boolean isPresentValue = hashMap.containsKey("Marvin");
+        // true
 
-        boolean isPresentValue2 = hashMap.containsKey("Trillian");
-        System.out.println(isPresentValue2);
-
-        for (String key : hashMap.keySet()) {
-            System.out.println(key + ":" + hashMap.get(key));
-        }
+        boolean isMissingValue = hashMap.containsKey("Trillian");
+        // false
 
         int itemCount = hashMap.size();
-        System.out.println(itemCount);
+        // 2
 
         hashMap.remove("Marvin");
-        hashMap.remove("Ford Prefect");
 
         int reducedItemCount = hashMap.size();
-        System.out.println(reducedItemCount);
+        // 1
 
         HashMap<String, String> hashMap2 = new HashMap<String, String>() {{
             put("Trillian", "Earth");
             put("Fenchurch", "Earth");
         }};
+        // { "Trillian":"Earth" , "Fenchurch":"Earth" }
 
-        for (String key : hashMap.keySet()) {
-            System.out.println(key + ":" + hashMap.get(key));
+        for (String key : hashMap2.keySet()) {
+            System.out.println(key + ":" + hashMap2.get(key));
         }
     }
 }

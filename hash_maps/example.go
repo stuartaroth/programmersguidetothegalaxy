@@ -4,44 +4,52 @@ import "fmt"
 
 func main() {
 	hashMap := make(map[string]string)
-	hashMap["Arthur Dent"] = "Earth"
-	hashMap["Ford Prefect"] = "Betelgeuse Seven"
+	// {}
+
 	hashMap["Zaphod Beeblebrox"] = "Betelgeuse Five"
+	// { "Zaphod Beeblebrox":"Betelgeuse Five" }
+
 	hashMap["Marvin"] = "Sirius"
+	// { "Zaphod Beeblebrox":"Betelgeuse Five" , "Marvin":"Sirius" }
 
-	presentValue1 := hashMap["Zaphod Beeblebrox"]
-	fmt.Println(presentValue1)
+	isPresentValue1 := hashMap["Zaphod Beeblebrox"]
+	// true
 
-	missingValue1 := hashMap["Fenchurch"]
-	fmt.Println(missingValue1)
+	isMissingValue1 := hashMap["Fenchurch"]
+	// false
 
-	presentValue2, isValuePresent1 := hashMap["Arthur Dent"]
-	fmt.Println(presentValue2)
-	fmt.Println(isValuePresent1)
+	presentValue, isPresentValue2 := hashMap["Marvin"]
+	// "Sirius", true
 
-	missingValue2, isValuePresent2 := hashMap["Trillian"]
-	fmt.Println(missingValue2)
-	fmt.Println(isValuePresent2)
-
-	for key, value := range hashMap {
-		fmt.Println(key + ":" + value)
-	}
+	missingValue, isMissingValue2 := hashMap["Trillian"]
+	// "", false
 
 	itemCount := len(hashMap)
-	fmt.Println(itemCount)
+	// 2
 
 	delete(hashMap, "Marvin")
-	delete(hashMap, "Ford Prefect")
 
 	reducedItemCount := len(hashMap)
-	fmt.Println(reducedItemCount)
+	// 1
 
 	hashMap2 := map[string]string{
 		"Trillian": "Earth",
 		"Fenchurch": "Earth",
 	}
+	// { "Trillian":"Earth" , "Fenchurch":"Earth" }
 
 	for key, value := range hashMap2 {
 		fmt.Println(key + ":" + value)
 	}
+
+	fmt.Println(
+		isPresentValue1,
+		isMissingValue1,
+		presentValue,
+		isPresentValue2,
+		missingValue,
+		isMissingValue2,
+		itemCount,
+		reducedItemCount,
+	)
 }

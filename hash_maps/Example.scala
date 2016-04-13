@@ -1,33 +1,32 @@
-var hashMap = Map[String, String]()
-hashMap += ("Arthur Dent" -> "Earth")
-hashMap += ("Ford Prefect" -> "Betelgeuse Seven")
-hashMap += ("Zaphod Beeblebrox" -> "Betelgeuse Five")
-hashMap += ("Marvin" -> "Sirius")
+val hashMapA = Map[String, String]()
+// {}
 
-val presentValue1 = hashMap get "Zaphod Beeblebrox"
-println(presentValue1)
+val hashMapB = hashMapA + ("Zaphod Beeblebrox" -> "Betelgeuse Five")
+// { "Zaphod Beeblebrox":"Betelgeuse Five" }
 
-val missingValue1 = hashMap get "Fenchurch"
-println(missingValue1)
+val hashMapC = hashMapB + ("Marvin" -> "Sirius")
+// { "Zaphod Beeblebrox":"Betelgeuse Five" , "Marvin":"Sirius" }
 
-val isPresentValue1 = hashMap contains "Arthur Dent"
-println(isPresentValue1)
+val presentValue = hashMapC get "Zaphod Beeblebrox"
+// Some("Betelgeuse Five")
 
-val isPresentValue2 = hashMap contains "Trillian"
-println(isPresentValue2)
+val missingValue1 = hashMapC get "Fenchurch"
+// None
 
-for((key, value) <- hashMap) {
-  println(key + ":" + value)
-}
+val isPresentValue = hashMapC contains "Arthur Dent"
+// true
 
-val itemCount = hashMap.size
-println(itemCount)
+val isMissingValue = hashMapC contains "Trillian"
+// false
 
-hashMap -= "Marvin"
-hashMap -= "Ford Prefect"
+val itemCount = hashMapC.size
+// 2
 
-val reducedItemCount = hashMap.size
-println(reducedItemCount)
+val hashMapD = hashMapC - "Marvin"
+// { "Zaphod Beeblebrox":"Betelgeuse Five" }
+
+val reducedItemCount = hashMapD.size
+// 1
 
 val hashMap2 = Map(
   "Trillian" -> "Earth",

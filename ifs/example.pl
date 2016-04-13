@@ -1,5 +1,4 @@
 use strict;
-use warnings;
 
 sub conditional_boolean {
     my ($value) = @_;

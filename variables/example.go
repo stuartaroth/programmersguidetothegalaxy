@@ -21,6 +21,8 @@ func main() {
 	z := x + y
 	// 42
 
-	fmt.Println(fullName)
-	fmt.Println(z)
+	fmt.Println(
+		fullName,
+		z,
+	)
 }

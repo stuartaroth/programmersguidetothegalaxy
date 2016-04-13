@@ -1,39 +1,38 @@
 var hashMap:any = {};
-hashMap["Arthur Dent"] = "Earth";
-hashMap["Ford Prefect"] = "Betelgeuse Seven";
+// {}
+
 hashMap["Zaphod Beeblebrox"] = "Betelgeuse Five";
+// { "Zaphod Beeblebrox":"Betelgeuse Five" }
+
 hashMap.Marvin = "Sirius";
+// { "Zaphod Beeblebrox":"Betelgeuse Five" , "Marvin":"Sirius" }
 
-var presentValue1 = hashMap["Zaphod Beeblebrox"];
-console.log(presentValue1);
+var presentValue = hashMap["Zaphod Beeblebrox"];
+// "Betelgeuse Five"
 
-var missingValue1 = hashMap["Fenchurch"];
-console.log(missingValue1);
+var missingValue = hashMap["Fenchurch"];
+// undefined
 
-var isPresentValue1 = hashMap.hasOwnProperty("Arthur Dent");
-console.log(isPresentValue1);
+var isPresentValue = hashMap.hasOwnProperty("Marvin");
+// true
 
-var isPresentValue2 = hashMap.hasOwnProperty("Fenchurch");
-console.log(isPresentValue2);
-
-for(var key in hashMap) {
-    console.log(key + ":" + hashMap[key]);
-}
+var isMissingValue = hashMap.hasOwnProperty("Trillian");
+// false
 
 var itemCount = Object.keys(hashMap).length;
-console.log(itemCount);
+// 2
 
 delete hashMap.Marvin;
-delete hashMap["Ford Prefect"];
 
 var reducedItemCount = Object.keys(hashMap).length;
-console.log(reducedItemCount);
+// 1
 
 var hashMap2 = {
     "Trillian": "Earth",
     "Fenchurch": "Earth"
 };
+// { "Trillian": "Earth" , "Fenchurch": "Earth" }
 
-for(var key in hashMap2) {
-    console.log(key + ":" + hashMap2[key]);
+for (var key in hashMap2) {
+  console.log(key + ":" + hashMap2[key]);
 }

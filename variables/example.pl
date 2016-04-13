@@ -1,5 +1,4 @@
 use strict;
-use warnings;
 
 my $first_name = "Arthur";
 # "Arthur"
