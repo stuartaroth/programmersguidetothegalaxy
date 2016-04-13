@@ -52,9 +52,5 @@ func main() {
 		firstItem,
 		lastItem,
 		nthItem,
-		sliceCopy,
-		slicedSlice,
-		slicedSlice2,
-		combinedSlice,
 	)
 }
