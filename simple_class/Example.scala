@@ -1,3 +1,4 @@
+
 case class Author(firstName:String, lastName:String, yearBorn:Int) {
   def getFullName = firstName + " " + lastName
 }

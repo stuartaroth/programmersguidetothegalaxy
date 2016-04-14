@@ -1,3 +1,4 @@
+
 class Example {
     public static String conditionalBoolean(boolean value) {
         if (value) {

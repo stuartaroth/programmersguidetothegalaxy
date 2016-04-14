@@ -1,3 +1,4 @@
+
 def conditionalBoolean(value: Boolean) = if(value) "value is true" else "value is false"
 
 def conditionalInt(value: Int) = {

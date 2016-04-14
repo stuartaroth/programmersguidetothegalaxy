@@ -1,3 +1,4 @@
+
 def conditional_boolean(value):
   if value:
     return "value is true"

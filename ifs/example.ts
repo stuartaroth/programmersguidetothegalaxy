@@ -1,3 +1,4 @@
+
 var conditionalBoolean = (value:boolean) => {
     if (value) {
         return "value is true";

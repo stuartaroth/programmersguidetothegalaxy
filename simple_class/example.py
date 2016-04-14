@@ -1,3 +1,4 @@
+
 class Author:
   def __init__(self, firstName, lastName, yearBorn):
     self.firstName = firstName

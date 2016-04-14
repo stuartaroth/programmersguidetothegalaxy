@@ -1,3 +1,4 @@
+
 use strict;
 
 my @array = ("B", "C", "D", "E", "F", "G", "H");
