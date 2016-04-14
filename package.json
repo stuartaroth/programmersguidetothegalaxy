@@ -1,0 +1,17 @@
+{
+  "name": "programmersguidetothegalaxy",
+  "version": "0.0.1",
+  "description": "The goal of this project is to provide easy syntax lookup across languages for normal programming needs.",
+  "main": "",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stuartaroth/programmersguidetothegalaxy.git"
+  },
+  "author": "https://github.com/stuartaroth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stuartaroth/programmersguidetothegalaxy/issues"
+  },
+  "homepage": "https://github.com/stuartaroth/programmersguidetothegalaxy#readme"
+}
