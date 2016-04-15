@@ -1,4 +1,3 @@
-
 package main
 
 import "fmt"
@@ -34,7 +33,7 @@ func main() {
 	// 1
 
 	hashMap2 := map[string]string{
-		"Trillian": "Earth",
+		"Trillian":  "Earth",
 		"Fenchurch": "Earth",
 	}
 	// { "Trillian":"Earth" , "Fenchurch":"Earth" }

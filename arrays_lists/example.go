@@ -1,4 +1,3 @@
-
 package main
 
 import "fmt"
@@ -13,7 +12,7 @@ func main() {
 	slice = append([]string{"A"}, slice...)
 	// [ "A", "B", "C", "D", "E", "F", "G", "H", "I" ]
 
-	slice = append(slice[:len(slice) - 1], slice[len(slice):]...)
+	slice = append(slice[:len(slice)-1], slice[len(slice):]...)
 	// [ "A", "B", "C", "D", "E", "F", "G", "H" ]
 
 	slice = append(slice[:0], slice[1:]...)
@@ -25,7 +24,7 @@ func main() {
 	firstItem := slice[0]
 	// "B"
 
-	lastItem := slice[len(slice) - 1]
+	lastItem := slice[len(slice)-1]
 	// "H"
 
 	nthItem := slice[3]
