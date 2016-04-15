@@ -16,4 +16,9 @@ func main() {
 
 	s := greetPerson("Ford Prefect")
 	// "Hello Ford Prefect"
+
+	fmt.Println(
+		i,
+		s,
+	)
 }

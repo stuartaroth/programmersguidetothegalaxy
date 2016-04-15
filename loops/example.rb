@@ -28,4 +28,4 @@ end
 
 array.each { |item| puts item }
 
-array.each_with_i { |item, i| puts i.to_s + " " + item }
+array.each_with_index { |item, i| puts i.to_s + " " + item }
