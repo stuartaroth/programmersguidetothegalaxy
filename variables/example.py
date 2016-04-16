@@ -1,4 +1,3 @@
-
 first_name = "Arthur"
 # "Arthur"
 

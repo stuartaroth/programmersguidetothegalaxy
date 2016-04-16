@@ -1,4 +1,3 @@
-
 hash_map = {
   "The Hitchhiker's Guide to the Galaxy": 1979,
   "The Restaurant at the End of the Universe": 1980,

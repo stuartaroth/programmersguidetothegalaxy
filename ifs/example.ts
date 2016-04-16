@@ -1,4 +1,3 @@
-
 var booleanValue = true;
 
 if (booleanValue) {
@@ -27,9 +26,9 @@ if (stringValue == "tea") {
   // if none of the options
 }
 
-if (booleanValue == false && stringValue == "tea") {
+if (!booleanValue && stringValue == "tea") {
   // if booleanValue is false AND stringValue is "tea"
-} else if (booleanValue == true || intValue == 0) {
+} else if (booleanValue || intValue == 0) {
   // if booleanValue is true OR intValue is greater than 0
 } else {
   // if none of the options

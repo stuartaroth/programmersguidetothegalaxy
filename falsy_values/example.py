@@ -1,4 +1,3 @@
-
 falsy_values = [
   None,
   False,

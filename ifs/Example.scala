@@ -1,5 +1,4 @@
-
-val booleanValue = true;
+val booleanValue = true
 
 if (booleanValue) {
   // if booleanValue is true
@@ -7,7 +6,7 @@ if (booleanValue) {
   // if false
 }
 
-val intValue = 0;
+val intValue = 0
 
 if (intValue >= 1) {
   // if intValue is greater than or equal to 1
@@ -17,7 +16,7 @@ if (intValue >= 1) {
   // if none of the options
 }
 
-val stringValue = "tea";
+val stringValue = "tea"
 
 if (stringValue == "tea") {
   // if stringValue is "tea"
@@ -27,9 +26,9 @@ if (stringValue == "tea") {
   // if none of the options
 }
 
-if (booleanValue == false && stringValue == "tea") {
+if (!booleanValue && stringValue == "tea") {
   // if booleanValue is false AND stringValue is "tea"
-} else if (booleanValue == true || intValue == 0) {
+} else if (booleanValue || intValue == 0) {
   // if booleanValue is true OR intValue is greater than 0
 } else {
   // if none of the options

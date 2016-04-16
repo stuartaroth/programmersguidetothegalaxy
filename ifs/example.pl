@@ -1,5 +1,6 @@
+use strict;
 
-my $booleanValue = true;
+my $booleanValue = 1;
 
 if ($booleanValue) {
   # if $booleanValue is true
@@ -27,9 +28,9 @@ if ($stringValue eq "tea") {
   # if none of the options
 }
 
-if ($booleanValue == false && $stringValue == "tea") {
+if (!$booleanValue && $stringValue == "tea") {
   # if $booleanValue is false AND $stringValue is "tea"
-} elsif ($booleanValue == true || $intValue == 0) {
+} elsif ($booleanValue || $intValue == 0) {
   # if $booleanValue is true OR $intValue is greater than 0
 } else {
   # if none of the options

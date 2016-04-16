@@ -1,4 +1,3 @@
-
 var falsy_values = [
     false,
     0,

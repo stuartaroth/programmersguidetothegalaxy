@@ -1,4 +1,3 @@
-
 use strict;
 
 my $author = "Douglas Adams";

@@ -1,4 +1,3 @@
-
 class Author
   attr_accessor :firstName, :lastName, :yearBorn
   

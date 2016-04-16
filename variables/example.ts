@@ -1,4 +1,3 @@
-
 var firstName = "Arthur";
 // "Arthur"
 

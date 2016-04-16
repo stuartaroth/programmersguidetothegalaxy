@@ -1,4 +1,3 @@
-
 val author = "Douglas Adams"
 val count = 7
 

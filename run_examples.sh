@@ -1,3 +1,4 @@
+go fmt example.go &&
 go run example.go "$1" &&
 javac Example.java &&
 java Example "$1" &&

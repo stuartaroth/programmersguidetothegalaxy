@@ -1,4 +1,3 @@
-
 var author = "Douglas Adams";
 var count = 7;
 

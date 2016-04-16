@@ -1,8 +1,7 @@
+boolean_value = True;
 
-booleanValue = True;
-
-if booleanValue:
-  # if booleanValue is true
+if boolean_value:
+  # if boolean_value is true
   print
 else:
   # if false
@@ -10,35 +9,35 @@ else:
 
 
 
-intValue = 0;
+int_value = 0;
 
-if intValue >= 1:
-  # if intValue is greater than or equal to 1
+if int_value >= 1:
+  # if int_value is greater than or equal to 1
   print
-elif intValue < 0:
-  # if intValue is less than 0
+elif int_value < 0:
+  # if int_value is less than 0
   print
 else:
   # if none of the options
   print
 
-stringValue = "tea";
+string_value = "tea";
 
-if stringValue == "tea":
-  # if stringValue is "tea"
+if string_value == "tea":
+  # if string_value is "tea"
   print
-elif stringValue == "almost, but not quite, entirely unlike tea":
-  # if stringValue is "almost, but not quite, entirely unlike tea"
+elif string_value == "almost, but not quite, entirely unlike tea":
+  # if string_value is "almost, but not quite, entirely unlike tea"
   print
 else:
   # if none of the options
   print
 
-if booleanValue == False and stringValue == "tea":
-  # if booleanValue is false AND stringValue is "tea"
+if not boolean_value and string_value == "tea":
+  # if boolean_value is false AND string_value is "tea"
   print
-elif booleanValue == True or intValue == 0:
-  # if booleanValue is true OR intValue is greater than 0
+elif boolean_value or int_value == 0:
+  # if boolean_value is true OR int_value is greater than 0
   print
 else:
   # if none of the options

@@ -1,4 +1,3 @@
-
 class Author {
   public String firstName;
   public String lastName;

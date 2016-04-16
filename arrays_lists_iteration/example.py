@@ -1,4 +1,3 @@
-
 list = [
     "The Hitchhiker's Guide to the Galaxy",
     "The Restaurant at the End of the Universe",

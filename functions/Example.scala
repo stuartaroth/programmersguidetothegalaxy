@@ -1,4 +1,3 @@
-
 def multiply(x: Int, y: Int) = x * y
 
 def greetPerson(name: String) = "Hello " + name

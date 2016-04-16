@@ -1,4 +1,3 @@
-
 author = "Douglas Adams"
 count = 7
 

@@ -1,4 +1,3 @@
-
 class Example {
 
     public static int multiply(int x, int y) {

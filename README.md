@@ -1,19 +1,37 @@
-#programmersguidetothegalaxy
+# ProgrammersGuideToTheGalaxy
 
-The goal of this project is to provide easy syntax lookup across languages for normal programming needs.
+This repository contains code examples across several languages.
 
-You can run the examples in each folders by using the following commands:
+It is used by this repo:
+https://github.com/stuartaroth/programmersguidetothegalaxy-site
 
-go run example.go
+## Current Languages
 
-javac Example.java && java Example
+Go
 
-perl example.pl
+Java
 
-python example.py
+Perl
 
-ruby example.rb
+Python
 
-scala Example.scala
+Ruby
 
-tsc example.ts && node example.js
+Scala
+
+TypeScript
+
+## Contributing
+
+Pull requests are welcome. All new code should follow the established style.
+
+Currently the focus should be adding new languages, across all the currently included folders.
+
+New folders will need to include examples across all supported languages.
+
+Issues can be used to report bugs / request languages and folders.
+
+I'm currently planning on adding the following folders myself:
+
+Extensions
+Regex
