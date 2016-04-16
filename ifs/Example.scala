@@ -1,57 +1,36 @@
 
-def conditionalBoolean(value: Boolean) = if(value) "value is true" else "value is false"
+val booleanValue = true;
 
-def conditionalInt(value: Int) = {
-  if(value < 0)
-    "value is negative"
-  else if(value > 0)
-    "value is positive"
-  else
-    "value is zero"
+if (booleanValue) {
+  // if booleanValue is true
+} else {
+  // if false
 }
 
-def conditionalString(value: String) = {
-  if(value == "tea")
-    "Thanks for the tea!"
-  else
-    "Do you have any tea?"
+val intValue = 0;
+
+if (intValue >= 1) {
+  // if intValue is greater than or equal to 1
+} else if (intValue < 0) {
+  // if intValue is less than 0
+} else {
+  // if none of the options
 }
 
-def conditionalAndOr(x: Int, y: Int) = {
-  if(x > 0 && y > 0)
-    "x and y are both positive"
-  else if(x > 0 || y > 0)
-    "either x or y is positive"
-  else
-    "x and y are both 0 or negative"
+val stringValue = "tea";
+
+if (stringValue == "tea") {
+  // if stringValue is "tea"
+} else if (stringValue == "almost, but not quite, entirely unlike tea") {
+  // if stringValue is "almost, but not quite, entirely unlike tea"
+} else {
+  // if none of the options
 }
 
-val trueResponse = conditionalBoolean(true)
-println(trueResponse)
-
-val falseResponse = conditionalBoolean(false)
-println(falseResponse)
-
-val negativeResponse = conditionalInt(-1)
-println(negativeResponse)
-
-val positiveResponse = conditionalInt(1)
-println(positiveResponse)
-
-val zeroResponse = conditionalInt(0)
-println(zeroResponse)
-
-val rumResponse = conditionalString("tea")
-println(rumResponse)
-
-val nonRumResponse = conditionalString("almost, but not quite, entirely unlike tea")
-println(nonRumResponse)
-
-val andResponse = conditionalAndOr(13, 34)
-println(andResponse)
-
-val orResponse = conditionalAndOr(7, -8)
-println(orResponse)
-
-val elseResponse = conditionalAndOr(-12, 0)
-println(elseResponse);
+if (booleanValue == false && stringValue == "tea") {
+  // if booleanValue is false AND stringValue is "tea"
+} else if (booleanValue == true || intValue == 0) {
+  // if booleanValue is true OR intValue is greater than 0
+} else {
+  // if none of the options
+}

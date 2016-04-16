@@ -60,5 +60,6 @@ class Example {
 
         arrayList.addAll(arrayListToCombine);
         // [ "B", "C", "D", "E", "F", "G", "H", "I", "J", "K" ]
+        
     }
 }

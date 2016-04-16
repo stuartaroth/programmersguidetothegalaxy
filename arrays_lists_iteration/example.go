@@ -27,5 +27,5 @@ func main() {
 	for _, item := range list {
 		fmt.Println(item)
 	}
-	
+
 }

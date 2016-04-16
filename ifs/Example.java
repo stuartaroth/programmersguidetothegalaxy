@@ -1,70 +1,42 @@
 
 class Example {
-    public static String conditionalBoolean(boolean value) {
-        if (value) {
-            return "value is true";
-        } else {
-            return "value is false";
-        }
-    }
-
-    public static String conditionalInt(int value) {
-        if (value < 0) {
-            return "value is negative";
-        } else if (value > 0) {
-            return "value is positive";
-        } else {
-            return "value is zero";
-        }
-    }
-
-    public static String conditionalString(String value) {
-        if (value.equals("tea")) {
-            return "Thanks for the tea!";
-        } else {
-            return "Do you have any tea?";
-        }
-    }
-
-    public static String conditionalAndOr(int x, int y) {
-        if (x > 0 && y > 0) {
-            return "x and y are both positive";
-        } else if (x > 0 || y > 0) {
-            return "either x or y is positive";
-        } else {
-            return "x and y are both 0 or negative";
-        }
-    }
-
     public static void main(String[] args) {
-        String trueResponse = conditionalBoolean(true);
-        System.out.println(trueResponse);
 
-        String falseResponse = conditionalBoolean(false);
-        System.out.println(falseResponse);
+        boolean booleanValue = true;
 
-        String negativeResponse = conditionalInt(-1);
-        System.out.println(negativeResponse);
+        if (booleanValue) {
+            // if booleanValue is true
+        } else {
+            // if false
+        }
 
-        String positiveResponse = conditionalInt(1);
-        System.out.println(positiveResponse);
+        int intValue = 0;
 
-        String zeroResponse = conditionalInt(0);
-        System.out.println(zeroResponse);
+        if (intValue >= 1) {
+            // if intValue is greater than or equal to 1
+        } else if (intValue < 0) {
+            // if intValue is less than 0
+        } else {
+            // if none of the options
+        }
 
-        String rumResponse = conditionalString("tea");
-        System.out.println(rumResponse);
+        String stringValue = "tea";
 
-        String nonRumResponse = conditionalString("almost, but not quite, entirely unlike tea");
-        System.out.println(nonRumResponse);
+        if (stringValue.equals("tea")) {
+            // if stringValue is "tea"
+        } else if (stringValue.equals("almost, but not quite, entirely unlike tea")) {
+            // if stringValue is "almost, but not quite, entirely unlike tea"
+        } else {
+            // if none of the options
+        }
 
-        String andResponse = conditionalAndOr(13, 34);
-        System.out.println(andResponse);
+        if (booleanValue == false && stringValue.equals("tea")) {
+            // if booleanValue is false AND stringValue is "tea"
+        } else if (booleanValue == true || intValue == 0) {
+            // if booleanValue is true OR intValue is greater than 0
+        } else {
+            // if none of the options
+        }
 
-        String orResponse = conditionalAndOr(7, -8);
-        System.out.println(orResponse);
-
-        String elseResponse = conditionalAndOr(-12, 0);
-        System.out.println(elseResponse);
     }
 }
