@@ -1,5 +1,6 @@
 
-var question = "ultimate question of life, the universe, and everything";
-var answer = 42;
-var sentence = `The answer to the ${question} is ${answer}.`;
-console.log(sentence);
+var author = "Douglas Adams";
+var count = 7;
+
+var sentence = `${author} published ${count} novels.`;
+// Douglas Adams published 7 novels.

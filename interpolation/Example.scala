@@ -1,5 +1,6 @@
 
-val question = "ultimate question of life, the universe, and everything"
-val answer = 42
-val sentence = s"The answer to the $question is $answer."
-println(sentence)
+val author = "Douglas Adams"
+val count = 7
+
+val sentence = s"$author published $count novels."
+// Douglas Adams published 7 novels.
