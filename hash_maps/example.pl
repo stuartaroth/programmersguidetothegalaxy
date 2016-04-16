@@ -36,11 +36,3 @@ my %hash_map_3 = (
     "Number One" => "Golgafrincham"
 );
 # { "Slartibartfast":"Magrathea" , "Number One":"Golgafrincham" }
-
-foreach my $key (keys %hash_map_2) {
-    print "$key:$hash_map_2{$key}\n";
-}
-
-foreach my $key (keys %hash_map_3) {
-    print "$key:$hash_map_3{$key}\n";
-}

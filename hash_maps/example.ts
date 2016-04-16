@@ -33,7 +33,3 @@ var hashMap2 = {
     "Fenchurch": "Earth"
 };
 // { "Trillian": "Earth" , "Fenchurch": "Earth" }
-
-for (var key in hashMap2) {
-  console.log(key + ":" + hashMap2[key]);
-}

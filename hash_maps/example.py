@@ -30,6 +30,3 @@ hash_map_2 = {
   "Fenchurch": "Earth"
 }
 # { "Trillian":"Earth" , "Fenchurch":"Earth" }
-
-for key in hash_map_2:
-  print(key + ":" + hash_map_2[key])

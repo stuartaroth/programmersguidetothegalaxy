@@ -38,10 +38,6 @@ class Example {
             put("Fenchurch", "Earth");
         }};
         // { "Trillian":"Earth" , "Fenchurch":"Earth" }
-
-        for (String key : hashMap2.keySet()) {
-            System.out.println(key + ":" + hashMap2.get(key));
-        }
         
     }
 }

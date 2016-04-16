@@ -30,7 +30,3 @@ hash_map_2 = {
   "Fenchurch" => "Earth"
 }
 # { "Trillian":"Earth" , "Fenchurch":"Earth" }
-
-hash_map_2.each do |key, value|
-  puts key + ":" + value
-end

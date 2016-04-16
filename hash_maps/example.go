@@ -39,10 +39,6 @@ func main() {
 	}
 	// { "Trillian":"Earth" , "Fenchurch":"Earth" }
 
-	for key, value := range hashMap2 {
-		fmt.Println(key + ":" + value)
-	}
-
 	fmt.Println(
 		isPresentValue1,
 		isMissingValue1,
@@ -52,6 +48,7 @@ func main() {
 		isMissingValue2,
 		itemCount,
 		reducedItemCount,
+		hashMap2,
 	)
 
 }

@@ -33,7 +33,3 @@ val hashMap2 = Map(
   "Trillian" -> "Earth",
   "Fenchurch" -> "Earth"
 )
-
-for((key, value) <- hashMap2) {
-  println(key + ":" + value)
-}
