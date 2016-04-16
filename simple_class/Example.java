@@ -17,6 +17,7 @@ class Author {
 
 class Example {
     public static void main(String[] args) {
+
         Author author = new Author("Douglas", "Adams", 1952);
         // Author { firstName: 'Douglas', lastName: 'Adams', yearBorn: 1952 }
 
@@ -25,5 +26,6 @@ class Example {
 
         String fullName = author.getFullName();
         // "Doug Adams"
+        
     }
 }

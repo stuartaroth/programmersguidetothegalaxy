@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
+
 	hashMap := make(map[string]string)
 	// {}
 
@@ -52,4 +53,5 @@ func main() {
 		itemCount,
 		reducedItemCount,
 	)
+
 }

@@ -3,6 +3,7 @@ import java.util.HashMap;
 
 class Example {
     public static void main(String[] args) {
+
         HashMap<String, String> hashMap = new HashMap<String, String>();
         // {}
 
@@ -41,5 +42,6 @@ class Example {
         for (String key : hashMap2.keySet()) {
             System.out.println(key + ":" + hashMap2.get(key));
         }
+        
     }
 }

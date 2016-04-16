@@ -13,6 +13,7 @@ func (author Author) getFullName() string {
 }
 
 func main() {
+
 	author := Author{"Douglas", "Adams", 1952}
 	// Author { firstName: 'Douglas', lastName: 'Adams', yearBorn: 1952 }
 
@@ -23,4 +24,5 @@ func main() {
 	// "Doug Adams"
 
 	fmt.Println(fullName)
+
 }

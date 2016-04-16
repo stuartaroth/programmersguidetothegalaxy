@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
+
 	slice := []string{"B", "C", "D", "E", "F", "G", "H"}
 	// [ "B", "C", "D", "E", "F", "G", "H" ]
 
@@ -53,4 +54,5 @@ func main() {
 		lastItem,
 		nthItem,
 	)
+
 }
