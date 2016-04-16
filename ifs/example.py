@@ -7,8 +7,6 @@ else:
   # if false
   print
 
-
-
 int_value = 0;
 
 if int_value >= 1:
