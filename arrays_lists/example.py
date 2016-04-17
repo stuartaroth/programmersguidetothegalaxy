@@ -19,10 +19,10 @@ length = len(array)
 first_item = array[0]
 # "B"
 
-last_item = array[len(array) - 1]
+last_item = array[-1]
 # "H"
 
-nth_item = array[3];
+nth_item = array[3]
 # "E"
 
 position = array.index("F")
