@@ -1,1 +1,3 @@
-// Dart does not support truthy/falsy values
+void main() {
+  // Dart does not support truthy/falsy values
+}

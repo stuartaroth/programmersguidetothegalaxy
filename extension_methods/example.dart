@@ -1,1 +1,3 @@
-// Dart does not support extension methods
+void main() {
+  // Dart does not support extension methods
+}
