@@ -1,4 +1,4 @@
-var array = ["B", "C", "D", "E", "F", "G", "H"];
+var array:Array<string> = ["B", "C", "D", "E", "F", "G", "H"];
 // [ "B", "C", "D", "E", "F", "G", "H" ]
 
 array.push("I");

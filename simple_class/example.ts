@@ -8,11 +8,11 @@ class Author {
   }
 }
 
-var author = new Author("Douglas", "Adams", 1952);
+var author:Author = new Author("Douglas", "Adams", 1952);
 // Author { firstName: 'Douglas', lastName: 'Adams', yearBorn: 1952 }
 
 author.firstName = "Doug";
 // Author { firstName: 'Doug', lastName: 'Adams', yearBorn: 1952 }
 
-var fullName = author.getFullName();
+var fullName:string = author.getFullName();
 // "Doug Adams"

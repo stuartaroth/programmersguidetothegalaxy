@@ -6,8 +6,8 @@ function greetPerson(name:string):string {
     return "Hello " + name;
 }
 
-var i = multiply(6, 9);
+var i:number = multiply(6, 9);
 // 54
 
-var s = greetPerson("Ford Prefect");
+var s:string = greetPerson("Ford Prefect");
 // "Hello Ford Prefect"

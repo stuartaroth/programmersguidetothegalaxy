@@ -1,4 +1,4 @@
-var booleanValue = true;
+var booleanValue:boolean = true;
 
 if (booleanValue) {
   // if booleanValue is true
@@ -6,7 +6,7 @@ if (booleanValue) {
   // if false
 }
 
-var intValue = 0;
+var intValue:number = 0;
 
 if (intValue >= 1) {
   // if intValue is greater than or equal to 1
@@ -16,7 +16,7 @@ if (intValue >= 1) {
   // if none of the options
 }
 
-var stringValue = "tea";
+var stringValue:string = "tea";
 
 if (stringValue == "tea") {
   // if stringValue is "tea"

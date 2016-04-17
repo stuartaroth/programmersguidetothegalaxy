@@ -1,17 +1,17 @@
-var firstName = "Arthur";
+var firstName:string = "Arthur";
 // "Arthur"
 
-var lastName = "Dent";
+var lastName:string = "Dent";
 // "Dent"
 
-var fullName = firstName + " " + lastName;
+var fullName:string = firstName + " " + lastName;
 // "Arthur Dent"
 
-var x = 13;
+var x:number = 13;
 // 13
 
-var y = 29;
+var y:number = 29;
 // 29
 
-var z = x + y;
+var z:number = x + y;
 // 42
