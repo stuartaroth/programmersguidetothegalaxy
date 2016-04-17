@@ -7,6 +7,8 @@ https://github.com/stuartaroth/programmersguidetothegalaxy-site
 
 ## Current Languages
 
+Dart
+
 Go
 
 Java
