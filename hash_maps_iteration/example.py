@@ -7,7 +7,7 @@ hash_map = {
 }
 
 for key in hash_map:
-  print(key + " " + str(hash_map[key]))
+  print(key, hash_map[key])
 
 for key, value in hash_map.items():
-  print(key + " " + str(value))
+  print(key, value)

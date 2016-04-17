@@ -1,5 +1,5 @@
 author = "Douglas Adams"
 count = 7
 
-sentence = "%(author)s published %(count)s novels." % locals()
+sentence = "{author} published {count} novels.".format(**locals())
 # Douglas Adams published 7 novels.

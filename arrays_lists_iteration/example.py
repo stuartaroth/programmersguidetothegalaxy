@@ -6,8 +6,8 @@ list = [
     "Mostly Harmless"
 ]
 
-for i in range(len(list)):
-  print(str(i) + " " + list[i])
+for i, el in enumerate(list):
+  print(i, el)
 
 for item in list:
   print(item)
