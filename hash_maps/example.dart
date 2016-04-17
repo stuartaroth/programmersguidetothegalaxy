@@ -3,10 +3,10 @@ void main() {
   // {}
 
   map['Zaphod Beeblebrox'] = 'Betelgeuse Five';
-  // {Zaphod Beeblebrox: Betelgeuse Five}
+  // {'Zaphod Beeblebrox': 'Betelgeuse Five'}
 
   map['Marvin'] = 'Sirius';
-  // {{Zaphod Beeblebrox: Betelgeuse Five, Marvin: Sirius}
+  // {'Zaphod Beeblebrox': 'Betelgeuse Five', 'Marvin': 'Sirius'}
 
   var presentValue = map['Zaphod Beeblebrox'];
   // 'Betelgeuse Five'
@@ -24,11 +24,11 @@ void main() {
   // 2
 
   map.remove('Marvin');
-  // {Zaphod Beeblebrox: Betelgeuse Five}
+  // {'Zaphod Beeblebrox': 'Betelgeuse Five'}
 
   var hashMap2 = {
     'Trillian': 'Earth',
     'Fenchurch': 'Earth'
   };
-  // {Trillian: Earth, Fenchurch: Earth}
+  // {'Trillian': 'Earth', 'Fenchurch': 'Earth'}
 }
