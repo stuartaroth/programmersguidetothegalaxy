@@ -35,7 +35,7 @@ if not boolean_value and string_value == "tea":
   # if boolean_value is false AND string_value is "tea"
   print
 elif boolean_value or int_value == 0:
-  # if boolean_value is true OR int_value is greater than 0
+  # if boolean_value is true OR int_value is equal to 0
   print
 else:
   # if none of the options

@@ -31,7 +31,7 @@ if ($stringValue eq "tea") {
 if (!$booleanValue && $stringValue == "tea") {
   # if $booleanValue is false AND $stringValue is "tea"
 } elsif ($booleanValue || $intValue == 0) {
-  # if $booleanValue is true OR $intValue is greater than 0
+  # if $booleanValue is true OR $intValue is equal to 0
 } else {
   # if none of the options
 }
