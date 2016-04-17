@@ -7,7 +7,7 @@ list = [
 ]
 
 for i, el in enumerate(list):
-  print(str(i) + " " + el)
+  print(i, el)
 
 for item in list:
   print(item)
