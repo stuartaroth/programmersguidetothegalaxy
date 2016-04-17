@@ -2,41 +2,41 @@ boolean_value = True;
 
 if boolean_value:
   # if boolean_value is true
-  print
+  pass
 else:
   # if false
-  print
+  pass
 
 int_value = 0;
 
 if int_value >= 1:
   # if int_value is greater than or equal to 1
-  print
+  pass
 elif int_value < 0:
   # if int_value is less than 0
-  print
+  pass
 else:
   # if none of the options
-  print
+  pass
 
 string_value = "tea";
 
 if string_value == "tea":
   # if string_value is "tea"
-  print
+  pass
 elif string_value == "almost, but not quite, entirely unlike tea":
   # if string_value is "almost, but not quite, entirely unlike tea"
-  print
+  pass
 else:
   # if none of the options
-  print
+  pass
 
 if not boolean_value and string_value == "tea":
   # if boolean_value is false AND string_value is "tea"
-  print
+  pass
 elif boolean_value or int_value == 0:
   # if boolean_value is true OR int_value is equal to 0
-  print
+  pass
 else:
   # if none of the options
-  print
+  pass
