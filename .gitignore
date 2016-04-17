@@ -1,4 +1,4 @@
 *.class
-*.js
+example.js
 .DS_Store
 .idea/
