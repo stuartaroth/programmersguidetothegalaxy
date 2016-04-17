@@ -31,11 +31,6 @@ Pull requests are welcome. All new code should follow the established style.
 
 Currently the focus should be adding new languages, across all the currently included folders.
 
-New folders will need to include examples across all supported languages.
+New folders should try to include examples across all supported languages.
 
 Issues can be used to report bugs / request languages and folders.
-
-I'm currently planning on adding the following folders myself:
-
-Extensions
-Regex
