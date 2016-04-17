@@ -13,6 +13,8 @@ Go
 
 Java
 
+JavaScript
+
 Perl
 
 Python
