@@ -15,6 +15,8 @@ Java
 
 JavaScript
 
+Kotlin
+
 Perl
 
 Python
@@ -32,5 +34,9 @@ Pull requests are welcome. All new code should follow the established style.
 Currently the focus should be adding new languages, across all the currently included folders.
 
 New folders should try to include examples across all supported languages.
+
+Before pull requesting, you should run the command ./run_all_examples.sh
+
+When doing this all your code should compile and run.
 
 Issues can be used to report bugs / request languages and folders.
