@@ -1,4 +1,3 @@
-
 fun main(args: Array<String>) {
 
     val list = arrayListOf("B", "C", "D", "E", "F", "G", "H")
