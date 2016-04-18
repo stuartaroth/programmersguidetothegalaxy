@@ -1,22 +1,22 @@
 class Author
-  attr_accessor :firstName, :lastName, :yearBorn
+  attr_accessor :first_name, :last_name, :year_born
   
-  def initialize(firstName, lastName, yearBorn)
-    @firstName = firstName
-    @lastName = lastName
-    @yearBorn = yearBorn
+  def initialize(first_name, last_name, year_born)
+    @first_name = first_name
+    @last_name = last_name
+    @year_born = year_born
   end
 
   def getFullName
-    return @firstName + " " + @lastName
+    return @first_name + " " + @last_name
   end
 end
 
 author = Author.new("Douglas", "Adams", 1952)
-# Author { firstName: 'Douglas', lastName: 'Adams', yearBorn: 1952 }
+# Author { first_name: 'Douglas', last_name: 'Adams', year_born: 1952 }
 
-author.firstName = "Doug"
-# Author { firstName: 'Doug', lastName: 'Adams', yearBorn: 1952 }
+author.first_name = "Doug"
+# Author { first_name: 'Doug', last_name: 'Adams', year_born: 1952 }
 
 fullName = author.getFullName()
 # "Doug Adams"

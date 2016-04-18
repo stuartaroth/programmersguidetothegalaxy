@@ -5,25 +5,25 @@ package Author;
 sub new {
   my $class = shift;
   my $self = {
-    firstName => shift,
-    lastName => shift,
-    yearBorn => shift,
+    first_name => shift,
+    last_name => shift,
+    year_born => shift,
   };
   bless $self, $class;
   return $self;
 }
 
-sub getFullName {
+sub get_full_name {
   my ( $self ) = @_;
-  return $self->{firstName} . " " . $self->{lastName};
+  return $self->{first_name} . " " . $self->{last_name};
 }
 
 
 my $author = new Author ( "Douglas", "Adams", 1952 );
-# Author { firstName: 'Douglas', lastName: 'Adams', yearBorn: 1952 }
+# Author { first_name: 'Douglas', last_name: 'Adams', year_born: 1952 }
 
-$author->{firstName} = "Doug";
-# Author { firstName: 'Doug', lastName: 'Adams', yearBorn: 1952 }
+$author->{first_name} = "Doug";
+# Author { first_name: 'Doug', last_name: 'Adams', year_born: 1952 }
 
-my $full_name = $author->getFullName();
+my $full_name = $author->get_full_name();
 # "Doug Adams"
