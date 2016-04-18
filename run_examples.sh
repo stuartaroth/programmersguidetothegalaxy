@@ -6,6 +6,7 @@ java Example "$1" &&
 kotlinc example.kt -include-runtime -d example.jar &&
 java -jar example.jar &&
 perl example.pl "$1" &&
+php example.php "$1" &&
 python example.py "$1" &&
 ruby example.rb "$1" &&
 scala Example.scala "$1" &&
