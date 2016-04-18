@@ -3,7 +3,7 @@
 This repository contains code examples across several languages.
 
 It is used by this repo:
-https://github.com/stuartaroth/programmersguidetothegalaxy-site
+https://github.com/stuartaroth/programmersguidetothegalaxy-site-jquery
 
 ## Current Languages
 
