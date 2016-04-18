@@ -143,5 +143,43 @@ if command_exists node; then
     done
 else
     echo "Install TypeScript before running the TypeScript tests";
-fi    
+fi
 
+if command_exists dart; then
+    echo "Running dart examples";
+
+    ((max_test=${#examples[@]}))
+
+    for ((i = 1; i < max_test; i++)); do
+        example_dir="${examples[$i]}"
+        (cd "$example_dir" && dart example.dart >> "$examples_log" ) || echo "Error running $example_dir example for dart!"
+    done
+else
+    echo "Install dart before running the dart tests";
+fi  
+
+if command_exists java && command_exists kotlinc; then
+    echo "Running kotlin examples";
+
+    ((max_test=${#examples[@]}))
+
+    for ((i = 1; i < max_test; i++)); do
+        example_dir="${examples[$i]}"
+        (cd "$example_dir" && kotlinc example.kt -include-runtime -d example.jar && java -jar example.jar  >> "$examples_log" ) || echo "Error running $example_dir example for kotlin!"
+    done
+else
+    echo "Install kotlin before running the kotlin tests";
+fi  
+
+if command_exists php; then
+    echo "Running php examples";
+
+    ((max_test=${#examples[@]}))
+
+    for ((i = 1; i < max_test; i++)); do
+        example_dir="${examples[$i]}"
+        (cd "$example_dir" && php example.php >> "$examples_log" ) || echo "Error running $example_dir example for php!"
+    done
+else
+    echo "Install dart before running the php tests";
+fi  

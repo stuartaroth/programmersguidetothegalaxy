@@ -1,5 +1,6 @@
 *.class
 *.jar
 example.js
+examples.log
 .DS_Store
 .idea/
