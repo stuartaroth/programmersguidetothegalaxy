@@ -22,6 +22,7 @@ examples=(
     hello_world
     ifs
     interpolation
+    lambdas
     loops
     simple_class
     variables

@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func multiply(x int, y int) int {
+func multiply(x, y int) int {
 	return x * y
 }
 
@@ -18,9 +18,6 @@ func main() {
 	s := greetPerson("Ford Prefect")
 	// "Hello Ford Prefect"
 
-	fmt.Println(
-		i,
-		s,
-	)
+	fmt.Println(i, s)
 
 }
