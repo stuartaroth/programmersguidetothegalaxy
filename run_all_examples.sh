@@ -183,4 +183,17 @@ if command_exists php; then
     done
 else
     echo "Install dart before running the php tests";
-fi  
+fi
+
+if command_exists mcs && command_exists mono; then
+    echo "Running C# examples";
+
+    ((max_test=${#examples[@]}))
+
+    for ((i = 1; i < max_test; i++)); do
+        example_dir="${examples[$i]}"
+        (cd "$example_dir" && mcs Example.cs && mono Example.exe >> "$examples_log" ) || echo "Error running $example_dir example for C#!"
+    done
+else
+    echo "Install Mono before running the C# tests";
+fi

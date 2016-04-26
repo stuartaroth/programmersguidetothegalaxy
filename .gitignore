@@ -1,5 +1,6 @@
 *.class
 *.jar
+*.exe
 example.js
 examples.log
 .DS_Store
