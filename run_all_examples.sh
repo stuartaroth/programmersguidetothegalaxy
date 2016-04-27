@@ -15,7 +15,8 @@ examples=(
     arrays_lists 
     arrays_lists_iteration 
     command_line_arguments 
-    falsy_values 
+    falsy_values
+    extension_methods
     functions 
     hash_maps
     hash_maps_iteration
