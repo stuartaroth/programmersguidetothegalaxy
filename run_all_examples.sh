@@ -27,6 +27,7 @@ examples=(
     loops
     simple_class
     variables
+    variadic_functions
 );
 
 # Attempt go examples
