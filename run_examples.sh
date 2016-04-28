@@ -1,3 +1,5 @@
+mcs Example.cs &&
+mono Example.exe &&
 dart example.dart &&
 go fmt example.go &&
 go run example.go "$1" &&
