@@ -29,6 +29,8 @@ Ruby
 
 Scala
 
+Swift
+
 TypeScript
 
 ## Contributing
