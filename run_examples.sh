@@ -12,6 +12,7 @@ php example.php "$1" &&
 python example.py "$1" &&
 ruby example.rb "$1" &&
 scala Example.scala "$1" &&
+swift Example.swift "$1" &&
 tsc example.ts &&
 node example.js "$1" &&
 node exampleJs.js "$1"
