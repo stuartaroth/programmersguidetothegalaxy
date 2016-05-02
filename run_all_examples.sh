@@ -199,3 +199,16 @@ if command_exists mcs && command_exists mono; then
 else
     echo "Install Mono before running the C# tests";
 fi
+
+if command_exists swift; then
+    echo "Running Swift examples";
+
+    ((max_test=${#examples[@]}))
+
+    for ((i = 1; i < max_test; i++)); do
+        example_dir="${examples[$i]}"
+        (cd "$example_dir" && swift Example.swift >> "$examples_log" ) || echo "Error running $example_dir example for Swift!"
+    done
+else
+    echo "Install swift before running the Swift tests";
+fi
