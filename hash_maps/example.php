@@ -4,10 +4,10 @@ $hash_map = [];
 # [}
 
 $hash_map["Zaphod Beeblebrox"] = "Betelgeuse Five";
-# [ "Zaphod Beeblebrox":"Betelgeuse Five" }
+# { "Zaphod Beeblebrox":"Betelgeuse Five" }
 
 $hash_map["Marvin"] = "Sirius";
-# [ "Zaphod Beeblebrox":"Betelgeuse Five" , "Marvin":"Sirius" }
+# { "Zaphod Beeblebrox":"Betelgeuse Five" , "Marvin":"Sirius" }
 
 $present_value = $hash_map["Zaphod Beeblebrox"];
 # "Betelgeuse Five"
@@ -30,4 +30,4 @@ $hash_map_2 = [
   "Trillian" => "Earth",
   "Fenchurch" => "Earth"
 ];
-# [ "Trillian" => "Earth" , "Fenchurch" => "Earth" }
+# { "Trillian" => "Earth" , "Fenchurch" => "Earth" }

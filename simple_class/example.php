@@ -22,20 +22,10 @@ class Author
 }
 
 $author = new Author("Douglas", "Adams", 1952);
-# Author Object
-# (
-#     [first_name] => Douglas
-#     [last_name] => Adams
-#     [year_born] => 1952
-# )
+# Author { first_name: 'Douglas', last_name: 'Adams', year_born: 1952 }
 
 $author->first_name = "Doug";
-# Author Object
-# (
-#     [first_name] => Doug
-#     [last_name] => Adams
-#     [year_born] => 1952
-# )
+# Author { first_name: 'Doug', last_name: 'Adams', year_born: 1952 }
 
 $full_name = $author->getFullName();
 # "Doug Adams"

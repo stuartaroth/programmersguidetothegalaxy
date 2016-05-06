@@ -7,6 +7,7 @@ final list = [
 ];
 
 void main() {
+
   for (var i = 0; i < list.length; i++) {
     print('$i ${list[i]}');
   }
@@ -26,4 +27,5 @@ void main() {
   for (var i = 0, it = list.iterator; it.moveNext(); i++) {
     print('${i++} ${it.current}');
   }
+  
 }

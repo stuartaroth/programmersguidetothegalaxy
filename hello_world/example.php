@@ -1,2 +1,3 @@
 <?php
-print "Don't panic\n";
+
+print "Don't Panic\n";

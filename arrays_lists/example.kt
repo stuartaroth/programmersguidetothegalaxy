@@ -44,4 +44,5 @@ fun main(args: Array<String>) {
     
     list.addAll(listToCombine)
     // [ "B", "C", "D", "E", "F", "G", "H", "I", "J", "K" ]
+    
 }

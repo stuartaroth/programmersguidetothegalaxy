@@ -1,5 +1,5 @@
 fun main(args: Array<String>) {
     
-    println("Don't panic")
+    println("Don't Panic")
 
 }
