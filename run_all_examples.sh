@@ -26,6 +26,7 @@ examples=(
     lambdas
     loops
     simple_class
+    ternary_operators
     variables
     variadic_functions
 );
