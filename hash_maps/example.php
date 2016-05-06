@@ -1,7 +1,7 @@
 <?php
 
 $hash_map = [];
-# [}
+# {}
 
 $hash_map["Zaphod Beeblebrox"] = "Betelgeuse Five";
 # { "Zaphod Beeblebrox":"Betelgeuse Five" }
