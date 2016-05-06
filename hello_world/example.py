@@ -1,1 +1,1 @@
-print("Don't panic")
+print("Don't Panic")

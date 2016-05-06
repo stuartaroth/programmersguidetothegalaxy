@@ -1,1 +1,1 @@
-console.log("Don't panic");
+console.log("Don't Panic");

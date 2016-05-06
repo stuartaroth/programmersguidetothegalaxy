@@ -5,9 +5,11 @@ String greetPerson(String name) {
 }
 
 void main() {
+
   var i = multiply(6, 9);
   // 54
 
   var s = greetPerson('Ford Prefect');
   // 'Hello Ford Prefect'
+  
 }

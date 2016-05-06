@@ -8,7 +8,7 @@ func main() {
 	count := 7
 
 	sentence := fmt.Sprintf("%s published %d novels.", author, count)
-	// Douglas Adams published 7 novels.
+	// "Douglas Adams published 7 novels."
 
 	fmt.Println(sentence)
 

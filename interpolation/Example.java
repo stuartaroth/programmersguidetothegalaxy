@@ -5,7 +5,7 @@ class Example {
         int count = 7;
 
         String sentence = String.format("%s published %d novels.", author, count);
-        // Douglas Adams published 7 novels.
+        // "Douglas Adams published 7 novels."
 
     }
 }
