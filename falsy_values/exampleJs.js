@@ -1,4 +1,4 @@
-var falsy_values = [
+var falsyValues = [
     false,
     0,
     "",

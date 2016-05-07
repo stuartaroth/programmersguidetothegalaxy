@@ -1,5 +1,7 @@
 mcs Example.cs &&
 mono Example.exe &&
+coffee --compile exampleCoffee.coffee &&
+node exampleCoffee.js &&
 dart example.dart &&
 go fmt example.go &&
 go run example.go "$1" &&
