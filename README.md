@@ -9,6 +9,8 @@ https://github.com/stuartaroth/programmersguidetothegalaxy-site-jquery
 
 C#
 
+CoffeeScript
+
 Dart
 
 Go
