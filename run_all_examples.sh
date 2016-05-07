@@ -213,3 +213,17 @@ if command_exists swift; then
 else
     echo "Install swift before running the Swift tests";
 fi
+
+if command_exists coffee && command_exists node; then
+    echo "Running CoffeeScript examples";
+
+    ((max_test=${#examples[@]}))
+
+    for ((i = 1; i < max_test; i++)); do
+        example_dir="${examples[$i]}"
+        (cd "$example_dir" && coffee --compile exampleCoffee.coffee && node exampleCoffee.js >> "$examples_log" ) || echo "Error running $example_dir example for CoffeeScript!"
+    done
+else
+    echo "Install coffee before running the CoffeeScript tests";
+fi
+
