@@ -2,6 +2,7 @@
 *.jar
 *.exe
 example.js
+exampleCoffee.js
 examples.log
 .DS_Store
 .idea/
