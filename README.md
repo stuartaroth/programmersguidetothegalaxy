@@ -21,6 +21,8 @@ JavaScript
 
 Kotlin
 
+Nim
+
 Perl
 
 PHP
