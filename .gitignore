@@ -3,6 +3,8 @@
 *.exe
 example.js
 exampleCoffee.js
+exampleNim
+nimcache/
 examples.log
 .DS_Store
 .idea/
