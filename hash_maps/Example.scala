@@ -13,7 +13,7 @@ val presentValue = hashMapC get "Zaphod Beeblebrox"
 val missingValue1 = hashMapC get "Fenchurch"
 // None
 
-val isPresentValue = hashMapC contains "Arthur Dent"
+val isPresentValue = hashMapC contains "Marvin"
 // true
 
 val isMissingValue = hashMapC contains "Trillian"
