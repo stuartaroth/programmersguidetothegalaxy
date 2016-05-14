@@ -239,3 +239,16 @@ if command_exists nim; then
 else
     echo "Install nim before running the Nim tests";
 fi
+
+if command_exists lein; then
+    echo "Running Clojure examples";
+
+    ((max_test=${#examples[@]}))
+
+    for ((i = 1; i < max_test; i++)); do
+        example_dir="${examples[$i]}"
+        (cd "$example_dir" && lein exec example.clj >> "$examples_log" ) || echo "Error running $example_dir example for Clojure!"
+    done
+else
+    echo "Install lein before running the Clojure tests";
+fi
