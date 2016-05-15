@@ -1,1 +1,1 @@
-println("Don't Panic")
+println "Don't Panic"
