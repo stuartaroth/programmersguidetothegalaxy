@@ -1,21 +1,21 @@
 for (i = 0; i < 10; i++) {
-  println i
+    println i
 }
 
 10.times {
-  println it
+    println it
 }
 
 0.upto(9, {
-  println it
+    println it
 })
 
 0.step 10, 1, {
-  println it
+    println it
 }
 
 def count = 0
 while (count < 10) {
-  println count
-  count++
+    println count
+    count++
 }
