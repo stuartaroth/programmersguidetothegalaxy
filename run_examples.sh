@@ -9,6 +9,8 @@ javac Example.java &&
 java Example "$1" &&
 kotlinc example.kt -include-runtime -d example.jar &&
 java -jar example.jar &&
+lein exec example.clj "$1" &&
+nim compile --run exampleNim.nim &&
 perl example.pl "$1" &&
 php example.php "$1" &&
 python example.py "$1" &&

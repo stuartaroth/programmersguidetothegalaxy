@@ -227,3 +227,28 @@ else
     echo "Install coffee before running the CoffeeScript tests";
 fi
 
+if command_exists nim; then
+    echo "Running Nim examples";
+
+    ((max_test=${#examples[@]}))
+
+    for ((i = 1; i < max_test; i++)); do
+        example_dir="${examples[$i]}"
+        (cd "$example_dir" && nim compile --run exampleNim.nim >> "$examples_log" ) || echo "Error running $example_dir example for Nim!"
+    done
+else
+    echo "Install nim before running the Nim tests";
+fi
+
+if command_exists lein; then
+    echo "Running Clojure examples";
+
+    ((max_test=${#examples[@]}))
+
+    for ((i = 1; i < max_test; i++)); do
+        example_dir="${examples[$i]}"
+        (cd "$example_dir" && lein exec example.clj >> "$examples_log" ) || echo "Error running $example_dir example for Clojure!"
+    done
+else
+    echo "Install lein before running the Clojure tests";
+fi
