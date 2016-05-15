@@ -9,11 +9,15 @@ https://github.com/stuartaroth/programmersguidetothegalaxy-site-jquery
 
 C#
 
+Clojure
+
 CoffeeScript
 
 Dart
 
 Go
+
+Groovy
 
 Java
 
