@@ -13,7 +13,8 @@ examples_log=$(pwd)"/examples.log"
 
 examples=( 
     arrays_lists 
-    arrays_lists_iteration 
+    arrays_lists_iteration
+    arrays_lists_manipulation
     command_line_arguments 
     falsy_values
     extension_methods
