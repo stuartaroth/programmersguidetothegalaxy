@@ -1,7 +1,6 @@
 function Author (firstName, lastName, yearBorn) {
-  Object.assign(this, {firstName, lastName, yearBorn})
-
-  this.getFullName = () => this.firstName + ' ' + this.lastName
+  Object.assign(this, {firstName, lastName, yearBorn});
+  this.getFullName = () => this.firstName + ' ' + this.lastName;
 }
 
 var author = new Author("Douglas", "Adams", 1952);
