@@ -1,14 +1,8 @@
-var Author = (function () {
-    function Author(firstName, lastName, yearBorn) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.yearBorn = yearBorn;
-    }
-    Author.prototype.getFullName = function () {
-        return this.firstName + " " + this.lastName;
-    };
-    return Author;
-}());
+function Author (firstName, lastName, yearBorn) {
+  Object.assign(this, {firstName, lastName, yearBorn})
+
+  this.getFullName = () => this.firstName + ' ' + this.lastName
+}
 
 var author = new Author("Douglas", "Adams", 1952);
 // Author { firstName: 'Douglas', lastName: 'Adams', yearBorn: 1952 }
