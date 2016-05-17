@@ -6,3 +6,9 @@
 
 (def filtered-numbers (filter #(= 0 (rem % 2)) numbers))
 ;; [ 2, 4, 6, 8, 10 ]
+
+(def product-of-numbers (reduce * numbers))
+;; 3628800
+
+(def sum-of-numbers (reduce + numbers))
+;; 55

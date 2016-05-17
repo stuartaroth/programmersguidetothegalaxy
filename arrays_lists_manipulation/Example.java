@@ -15,6 +15,12 @@ class Example {
         List<Integer> filteredNumbers = numbers.stream().filter( x -> x % 2 == 0).collect(Collectors.toList());
         // [ 2, 4, 6, 8, 10 ]
 
+        int productOfNumbers = numbers.stream().mapToInt(i -> i.intValue()).reduce(1, (x, y) -> x * y);
+        // 3628800
+
+        int sumOfNumbers = numbers.stream().mapToInt(i -> i.intValue()).sum();
+        // 55
+
     }
 }
 

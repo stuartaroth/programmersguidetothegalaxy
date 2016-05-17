@@ -6,3 +6,9 @@ def collectedNumbers = numbers.collect { it * 2 }
 
 def filteredNumbers = numbers.findAll { it % 2 == 0 }
 // [ 2, 4, 6, 8, 10 ]
+
+def productOfNumbers = numbers.inject(1) { x, y -> x * y }
+// 3628800
+
+def sumOfNumbers = numbers.sum { it }
+// 55

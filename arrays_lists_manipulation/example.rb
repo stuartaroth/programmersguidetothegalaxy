@@ -6,3 +6,9 @@ mapped_numbers = numbers.map { |x| x * 2 }
 
 selected_numbers = numbers.select { |x| x % 2 == 0 }
 # [ 2, 4, 6, 8, 10 ]
+
+product_of_numbers = numbers.reduce( :* )
+# 3628800
+
+sum_of_numbers = numbers.reduce( :+ )
+# 55

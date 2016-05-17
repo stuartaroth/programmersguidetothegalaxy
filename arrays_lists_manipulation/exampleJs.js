@@ -6,3 +6,9 @@ var mappedNumbers = numbers.map(function (x) { return x * 2; });
 
 var filteredNumbers = numbers.filter(function (x) { return x % 2 == 0; });
 // [ 2, 4, 6, 8, 10 ]
+
+var productOfNumbers = numbers.reduce(function (x, y) { return x * y; });
+// 3628800
+
+var sumOfNumbers = numbers.reduce(function (x, y) { return x + y; });
+// 55

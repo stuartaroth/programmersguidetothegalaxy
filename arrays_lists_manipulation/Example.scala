@@ -6,3 +6,9 @@ val mappedNumbers = numbers.map(_ * 2)
 
 val filteredNumbers = numbers.filter(_ % 2 == 0)
 // [ 2, 4, 6, 8, 10 ]
+
+val productOfNumbers = numbers.reduceLeft(_ * _)
+// 3628800
+
+val sumOfNumbers = numbers.sum
+// 55
