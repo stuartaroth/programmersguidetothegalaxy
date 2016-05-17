@@ -9,4 +9,10 @@ void main() {
   var filteredNumbers = numbers.where((x) => x % 2 == 0);
   // [ 2, 4, 6, 8, 10 ]
 
+  var productOfNumbers = numbers.reduce((x, y) => x * y);
+  // 3628800
+
+  var sumOfNumbers = numbers.reduce((x, y) => x + y);
+  // 55
+
 }

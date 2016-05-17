@@ -8,3 +8,9 @@ var mappedNumbers = map(numbers, proc(x: int): int = x * 2)
 
 var filteredNumbers = filter(numbers, proc(x: int): bool = x mod 2 == 0)
 # [ 2, 4, 6, 8, 10 ]
+
+var productOfNumbers = foldl(numbers, a * b)
+# 3628800
+
+var sumOfNumbers = foldl(numbers, a + b)
+# 55

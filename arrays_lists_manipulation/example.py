@@ -6,3 +6,9 @@ mapped_numbers = map(lambda x: x * 2, numbers)
 
 filtered_numbers = filter(lambda x: x % 2 is 0, numbers)
 # [ 2, 4, 6, 8, 10 ]
+
+product_of_numbers = reduce(lambda x, y: x * y, numbers)
+# 3628800
+
+sum_of_numbers = sum(numbers)
+# 55

@@ -13,5 +13,11 @@ class Example
         
         var filteredNumbers = from number in numbers where number % 2 == 0 select number;
         // [ 2, 4, 6, 8, 10 ]
+
+        var productOfNumbers = numbers.Aggregate(1, (x, y) => x * y);
+        // 3628800
+
+        var sumOfNumbers = numbers.Sum();
+        // 55
     }
 }

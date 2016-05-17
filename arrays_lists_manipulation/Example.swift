@@ -6,3 +6,9 @@ var mappedNumbers = numbers.map({ (x) in x * 2 })
 
 var filteredNumbers = numbers.filter({ (x) in x % 2 == 0 })
 // [ 2, 4, 6, 8, 10 ]
+
+var productOfNumbers = numbers.reduce(1, combine: *)
+// 3628800
+
+var sumOfNumbers = numbers.reduce(0, combine: +)
+// 55
