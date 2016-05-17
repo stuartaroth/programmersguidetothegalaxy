@@ -16,8 +16,8 @@ i = multiply(6, 9)
 s = greet_person("Ford Prefect")
 # "Hello Ford Prefect"
 
-final_price = get_final_price(100.0)
+f_1 = get_final_price(100.0)
 # 105.0
 
-final_price = get_final_price(100.0, tax: 0.07)
+f_2 = get_final_price(100.0, tax: 0.07)
 # 107.0

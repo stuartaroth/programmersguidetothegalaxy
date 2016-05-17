@@ -7,7 +7,7 @@ func greetPerson(name: String) -> String {
 }
 
 func getFinalPrice(amount: Double, tax: Double = 0.05) -> Double {
-    return amount * (1 + tax)
+  return amount * (1 + tax)
 }
 
 var i = multiply(6, y: 9)
@@ -16,8 +16,8 @@ var i = multiply(6, y: 9)
 var s = greetPerson("Ford Prefect")
 // "Hello Ford Prefect"
 
-var final_price = getFinalPrice(100)
-// 105
+var d1 = getFinalPrice(100)
+// 105.0
 
-final_price = getFinalPrice(100.0, tax:0.07)
-// 107
+var d2 = getFinalPrice(100.0, tax:0.07)
+// 107.0
