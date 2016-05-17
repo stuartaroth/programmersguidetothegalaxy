@@ -1,41 +1,38 @@
 (def list-a (list "B" "C" "D" "E" "F" "G" "H"))
 ;; [ "B", "C", "D", "E", "F", "G", "H" ]
 
-(def list-b (concat list-a "I"))
-;; [ "B", "C", "D", "E", "F", "G", "H", "I" ]
-
-(def list-c (concat "A" list-b))
-;; [ "A", B", "C", "D", "E", "F", "G", "H", "I" ]
-
-(def list-d (butlast list-c))
+(def list-b (conj list-a "A"))
 ;; [ "A", B", "C", "D", "E", "F", "G", "H" ]
 
-(def list-e (rest list-d))
-;; [ "B", "C", "D", "E", "F", "G", "H" ]
+(def list-c (butlast list-b))
+;; [ "A", B", "C", "D", "E", "F", "G" ]
 
-(def length (count list-e))
-;; 7
+(def list-d (rest list-c))
+;; [ "B", "C", "D", "E", "F", "G" ]
 
-(def first-item (first list-e))
+(def length (count list-d))
+;; 6
+
+(def first-item (first list-d))
 ;; "B"
 
-(def last-item (last list-e))
-;; "H"
+(def last-item (last list-d))
+;; "G"
 
-(def nth-item (nth list-e 3))
+(def nth-item (nth list-d 3))
 ;; E
 
-(def position (.indexOf list-e "F"))
+(def position (.indexOf list-d "F"))
 ;; 4
 
-(def missing-position (.indexOf list-e "Z"))
+(def missing-position (.indexOf list-d "Z"))
 ;; -1
 
-(def sliced-list (drop 3 (take 5 list-e)))
+(def sliced-list (drop 3 (take 5 list-d)))
 ;; [ "E", "F" ]
 
-(def sliced-list-2 (drop 4 list-e))
-;; [ "F", "G", "H" ]
+(def sliced-list-2 (drop 4 list-d))
+;; [ "F", "G" ]
 
-(def combined-lists (concat list-e (list "I" "J" "K")))
-;; [ "B", "C", "D", "E", "F", "G", "H", "I", "J", "K" ]
+(def combined-lists (concat list-d (list "H" "I" "J")))
+;; [ "B", "C", "D", "E", "F", "G", "H", "I", "J" ]
