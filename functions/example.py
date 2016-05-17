@@ -14,7 +14,7 @@ s = greet_person("Ford Prefect")
 # "Hello Ford Prefect"
 
 final_price = get_final_price(100.0)
-# 1.05
+# 105.0
 
 final_price = get_final_price(100.0, tax=0.07)
 # 107.0
