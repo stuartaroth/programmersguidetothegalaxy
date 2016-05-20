@@ -20,4 +20,4 @@ scala Example.scala "$1" &&
 swift Example.swift "$1" &&
 tsc example.ts &&
 node example.js "$1" &&
-node exampleJs.js "$1"
+rustc -o rust_example example.rs && ./rust_example "$1"
