@@ -11,9 +11,8 @@ int main(){
     hashMap.insert(pair<string, int>("Life, the Universe and Everything", 1982));
     hashMap.insert(pair<string, int>("So Long, and Thanks for All the Fish", 1984));
     hashMap.insert(pair<string, int>("Mostly Harmless", 1992));
-
-    for (map<char,int>::iterator i=hashMap.begin(); i!=hashMap.end(); ++i)
-        cout << i->first << " " << i->second << '\n';
+    // -std=c++11 flag required for g++
+   	for (const auto &hm : hashMap)cout<<hm.first<<" "<<hm.second<<endl;
 
 	return 0;
 }
