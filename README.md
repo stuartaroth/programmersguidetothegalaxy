@@ -7,6 +7,8 @@ https://github.com/stuartaroth/programmersguidetothegalaxy-site-jquery
 
 ## Current Languages
 
+C++
+
 C#
 
 Clojure
