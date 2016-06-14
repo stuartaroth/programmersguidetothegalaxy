@@ -20,4 +20,5 @@ scala Example.scala "$1" &&
 swift Example.swift "$1" &&
 tsc example.ts &&
 node example.js "$1" &&
-rustc -o rust_example example.rs && ./rust_example "$1"
+rustc -o rust_example example.rs && ./rust_example "$1" &&
+g++ -std=c++11 -o cpp_example example.cpp && ./cpp_example "$1"

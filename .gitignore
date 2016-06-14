@@ -4,6 +4,8 @@
 example.js
 exampleCoffee.js
 exampleNim
+rust_example
+cpp_example
 nimcache/
 examples.log
 .DS_Store

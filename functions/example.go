@@ -12,7 +12,6 @@ func greetPerson(name string) string {
 
 // Go does not support default values for optional parameters
 
-
 func main() {
 
 	i := multiply(6, 9)

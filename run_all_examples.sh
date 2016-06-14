@@ -266,6 +266,7 @@ if command_exists groovy; then
 else
     echo "Install groovy before running the Groovy tests";
 fi
+
 if command_exists rustc; then
     echo "Running Rust examples";
 
@@ -277,4 +278,17 @@ if command_exists rustc; then
     done
 else
     echo "Install rust before running the Rust tests";
+fi
+
+if command_exists rustc; then
+    echo "Running C++ examples";
+
+    ((max_test=${#examples[@]}))
+
+    for ((i = 1; i < max_test; i++)); do
+        example_dir="${examples[$i]}"
+        (cd "$example_dir" && g++ -std=c++11 -o cpp_example example.cpp && ./cpp_example >> "$examples_log" ) || echo "Error running $example_dir example for C++!"
+    done
+else
+    echo "Install g++ before running the C++ tests";
 fi
