@@ -1,4 +1,4 @@
-boolean_value = true;
+boolean_value = true
 
 if boolean_value
   # if boolean_value is true
@@ -6,7 +6,7 @@ else
   # if false
 end
 
-int_value = 0;
+int_value = 0
 
 if int_value >= 1
   # if int_value is greater than or equal to 1
@@ -16,7 +16,7 @@ else
   # if none of the options
 end
 
-string_value = "tea";
+string_value = "tea"
 
 if string_value == "tea"
   # if string_value is "tea"
