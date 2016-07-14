@@ -13,16 +13,16 @@ func main() {
 	hashMap["Marvin"] = "Sirius"
 	// { "Zaphod Beeblebrox":"Betelgeuse Five" , "Marvin":"Sirius" }
 
-	isPresentValue1 := hashMap["Zaphod Beeblebrox"]
-	// true
+	presentValue1 := hashMap["Zaphod Beeblebrox"]
+	// "Belegeuse Five"
 
-	isMissingValue1 := hashMap["Fenchurch"]
-	// false
+	missingValue1 := hashMap["Fenchurch"]
+	// ""
 
-	presentValue, isPresentValue2 := hashMap["Marvin"]
+	presentValue2, isPresentValue := hashMap["Marvin"]
 	// "Sirius", true
 
-	missingValue, isMissingValue2 := hashMap["Trillian"]
+	missingValue2, isMissingValue := hashMap["Trillian"]
 	// "", false
 
 	itemCount := len(hashMap)
@@ -40,12 +40,12 @@ func main() {
 	// { "Trillian":"Earth" , "Fenchurch":"Earth" }
 
 	fmt.Println(
-		isPresentValue1,
-		isMissingValue1,
-		presentValue,
-		isPresentValue2,
-		missingValue,
-		isMissingValue2,
+		presentValue1,
+		missingValue1,
+		presentValue2,
+		isPresentValue,
+		missingValue2,
+		isMissingValue,
 		itemCount,
 		reducedItemCount,
 		hashMap2,
