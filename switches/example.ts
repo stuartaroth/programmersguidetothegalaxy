@@ -22,23 +22,23 @@ function typeSwitch(t: any): string {
   }
 }
 
-var zero = numberSwitch(0)
+var zero = numberSwitch(0);
 // "zero"
 
-var one = numberSwitch(1)
+var one = numberSwitch(1);
 // "one"
 
-var neither =  numberSwitch(42)
+var neither = numberSwitch(42);
 // "not zero or one"
 
-var isBoolean = typeSwitch(false)
+var isBoolean = typeSwitch(false);
 // "boolean"
 
-var isNumber = typeSwitch(6)
+var isNumber = typeSwitch(6);
 // "number"
 
-var isString = typeSwitch("nine")
+var isString = typeSwitch("nine");
 // "string"
 
-var isNone = typeSwitch({})
+var isNone = typeSwitch({});
 // "not boolean, int, or string"
