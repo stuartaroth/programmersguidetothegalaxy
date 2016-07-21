@@ -280,7 +280,7 @@ else
     echo "Install rust before running the Rust tests";
 fi
 
-if command_exists rustc; then
+if command_exists g++; then
     echo "Running C++ examples";
 
     ((max_test=${#examples[@]}))
