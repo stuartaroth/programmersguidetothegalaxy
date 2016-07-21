@@ -292,3 +292,43 @@ if command_exists rustc; then
 else
     echo "Install g++ before running the C++ tests";
 fi
+
+if command_exists ecl; then
+    echo "Running Common Lisp examples with ECL";
+
+    ((max_test=${#examples[@]}))
+
+    for ((i = 1; i < max_test; i++)); do
+        example_dir="${examples[$i]}"
+        (cd "$example_dir" && ecl -norc -shell example.lisp >> "$examples_log" ) || echo "Error running $example_dir example for Common Lisp with ECL!"
+    done
+elif command_exists clisp; then
+    echo "Running Common Lisp examples with CLISP";
+
+    ((max_test=${#examples[@]}))
+
+    for ((i = 1; i < max_test; i++)); do
+        example_dir="${examples[$i]}"
+        (cd "$example_dir" && clisp -q example.lisp >> "$examples_log" ) || echo "Error running $example_dir example for Common Lisp with CLISP!"
+    done
+elif command_exists ccl; then
+    echo "Running Common Lisp examples with CCL";
+
+    ((max_test=${#examples[@]}))
+
+    for ((i = 1; i < max_test; i++)); do
+        example_dir="${examples[$i]}"
+        (cd "$example_dir" && ccl -nQ -l example.lisp -e '(quit)' >> "$examples_log" ) || echo "Error running $example_dir example for Common Lisp with CCL!"
+    done
+elif command_exists sbcl; then
+    echo "Running Common Lisp examples with SBCL";
+
+    ((max_test=${#examples[@]}))
+
+    for ((i = 1; i < max_test; i++)); do
+        example_dir="${examples[$i]}"
+        (cd "$example_dir" && sbcl --script example.lisp >> "$examples_log" ) || echo "Error running $example_dir example for Common Lisp with SBCL!"
+    done
+else
+    echo "Install one of Clozure Common Lisp, Steel Bank Common Lisp, CLISP or Embeddable Common Lisp  before running the Common Lisp tests";
+fi
