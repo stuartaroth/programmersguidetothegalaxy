@@ -1,3 +1,4 @@
+/*
 var http = require("http");
 
 function handler(request, response) {
@@ -6,3 +7,4 @@ function handler(request, response) {
 
 var server = http.createServer(handler);
 server.listen(8080);
+*/
