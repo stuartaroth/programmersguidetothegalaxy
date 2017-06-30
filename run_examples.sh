@@ -6,6 +6,7 @@ dart example.dart "$1" &&
 go fmt example.go &&
 go run example.go "$1" &&
 groovy example.groovy "$1" &&
+haxe -main Example --interp &&
 javac Example.java &&
 java Example "$1" &&
 kotlinc example.kt -include-runtime -d example.jar &&
