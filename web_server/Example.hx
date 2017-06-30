@@ -1,5 +1,5 @@
 class Example {
     static public function main():Void {
-        trace("Don't Panic");
+        // Web server example to be done
     }
 }
